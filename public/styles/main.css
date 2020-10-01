@@ -3,10 +3,120 @@
 body {
   font-family: 'Overpass', sans-serif;
   line-height: 2;
+  margin: 1%;
+}
+
+header {
+  position: relative;
+  background-size: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 1rem;
+  text-align: center;
 }
 
 main,
 footer {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  flex-flow: wrap;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.curve-div {
+  margin: 25px;
+  height: 700px;
+  width: 367px;
+  background-color: #f2f7f2;
+  border-radius: 60px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+.curve-div:hover {
+  box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  color: #6f6f6f;
+}
+
+.curve-div::before {
+  transform: scaleX(-1);
+  content: '';
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 367px;
+  background-color: #bb439a;
+  background-image: linear-gradient(0deg, #bb439a 0%, #ff786a 100%);
+  border-radius: 60px 60px 0px;
+}
+
+.curve-div::before {
+  content: '';
+  display: block;
+  height: 350px;
+  width: 367px;
+  background-color: #bb439a;
+  background-size: cover;
+  /* background-image: linear-gradient(0deg, #bb439a 0%, #ff786a 100%); */
+  background-image: url('../assets/image-from-rawpixel-id-478037-jpeg.jpg');
+  /* background-image: url('<%= image %>'); */
+
+  border-radius: 60px 60px 0px;
+}
+
+.curve-div--smaller {
+  bottom: -89.8%;
+  height: 50px;
+  width: 25px;
+  border-top-left-radius: 25px;
+  content: '';
+
+  background-color: transparent;
+  border-top-left-radius: 25px;
+  /* box-shadow: 0 -25px 0 0 #001f3f; This is where the magic happens! */
+  box-shadow: 0 -25px 0 0 #cdcdcd;
+  /* display: block;
+  height: 80px;
+  width: 80px; */
+  /* background-color: #bb439a; */
+  /* background-image: linear-gradient(0deg, #bb439a 0%, #ff786a 100%);
+  border-radius: 60px 60px 0px; */
+}
+
+.text {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-button {
+  font-size: 0.9em;
+  background: white;
+  width: 80%;
+  color: #a7a7a7;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, 0.3);
+  transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+}
+.explore-button:hover {
+  box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  color: #6f6f6f;
 }

@@ -1,6 +1,6 @@
 const data = {
-  title: 'Meu currículo',
-  name: 'Bruna Gabriele de Paula',
+  title: 'Olá, eu sou',
+  name: 'Bruna G. Paula',
   profession: 'Desenvolvedora Front-end',
   description: '...',
   experience: [
@@ -13,6 +13,24 @@ const data = {
       company: 'everis',
       office: 'Solutions Assistant | Front-end',
       description: '...',
+    },
+  ],
+
+  projects: [
+    {
+      name: 'Projeto A',
+      description: '.....',
+      repository: 'https://github.com/brubriele/lib-scale-chord-convert',
+    },
+    {
+      name: 'Instagram Réplica',
+      description: '.....',
+      repository: 'https://brubriele.github.io/react-women-chal-2/public/',
+    },
+    {
+      name: 'Projeto C',
+      description: '.....',
+      repository: 'https://github.com/brubriele/lib-scale-chord-convert',
     },
   ],
   education: [
