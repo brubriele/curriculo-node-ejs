@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Overpass:wght@200;300&display=swap");
-body {
+.typography, body {
   font-family: 'Overpass', sans-serif;
   line-height: 2;
   margin: 1%; }
+
+.flex-elements {
+  display: flex;
+  flex-direction: column; }
 
 header {
   position: relative;
@@ -13,7 +17,7 @@ header {
   padding: 10rem 1rem;
   text-align: center;
   background-size: auto;
-  background-color: #f2f7f2;
+  background-color: #f6f6fa;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%238e5572' fill-opacity='0.5'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); }
 
 main,
@@ -32,7 +36,7 @@ footer {
     margin: 25px;
     height: 700px;
     width: 367px;
-    background-color: #f2f7f2;
+    background-color: #f6f6fa;
     border-radius: 60px;
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3); }
     .card-list__shape::before {
@@ -50,22 +54,15 @@ footer {
       box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
       transform: translateY(-1px);
       color: #6f6f6f; }
-  .card-list--small {
-    bottom: -89.8%;
-    height: 50px;
-    width: 25px;
-    border-top-left-radius: 25px;
-    content: '';
-    background-color: transparent;
-    border-top-left-radius: 25px;
-    /* box-shadow: 0 -25px 0 0 #001f3f; This is where the magic happens! */
-    box-shadow: 0 -25px 0 0 #cdcdcd;
-    /* display: block;
-  height: 80px;
-  width: 80px; */
-    /* background-color: #bb439a; */
-    /* background-image: linear-gradient(0deg, #bb439a 0%, #ff786a 100%);
-  border-radius: 60px 60px 0px; */ }
+    .card-list__shape--small {
+      bottom: -89.8%;
+      height: 50px;
+      width: 25px;
+      border-top-left-radius: 25px;
+      content: '';
+      background-color: transparent;
+      border-top-left-radius: 25px;
+      box-shadow: 0 -25px 0 0 #cdcdcd; }
   .card-list .text {
     padding: 10px;
     display: flex;
