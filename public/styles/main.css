@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Overpass:wght@200;300&display=swap');
+
+body {
+  font-family: 'Overpass', sans-serif;
+  line-height: 2;
+}
+
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
