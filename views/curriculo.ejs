@@ -46,11 +46,26 @@
       <% }); %>
     </ul>
 
-    <div class="container">
+    <ul class="container">
+      <% projects.map(projects => { %>
+      <li>
+        <div class="curve-div">
+          <div class="curve-div--smaller"></div>
+          <div class="text">
+            <p><%= projects.name %></p>
+            <p><%= projects.description %></p>
+            <a target="_blank" href="<%= projects.repository %>" class="explore-button">Explore</a>
 
-      <div class="curve-div">
-        <strong><%= name %></strong>
+          </div>
+
+      </li>
+
+
       </div>
+
+      <% }); %>
+
+    </ul>
     </div>
 
 
