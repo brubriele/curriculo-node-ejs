@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "build-sass": "node-sass scss/generic.scss public/styles/main.css",
-    "watch-sass": "node-sass -w scss/generic.scss public/styles/main.css"
+    "scss": "node-sass -w scss -o public/styles/css"
   },
   "repository": {
     "type": "git",

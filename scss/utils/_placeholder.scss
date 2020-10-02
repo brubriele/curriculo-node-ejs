@@ -1,0 +1,22 @@
+//Placeholder class
+.reset {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.typography {
+  font-family: 'Overpass', sans-serif;
+  line-height: 2;
+  margin: 1%;
+}
+
+.flex-elements {
+  display: flex;
+  flex-direction: column;
+}
