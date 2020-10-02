@@ -30,17 +30,46 @@ footer {
   justify-content: start;
   flex-flow: wrap;
   padding: 0;
-
+  // 469974
   li {
-    // &:first-of-type {
-    //   background-color: blue;
-    // }
+    &:nth-child(2) > div {
+      &::before {
+        background-image: url('../assets/animation_500_kfrmnsvu.gif');
+        background-size: contain;
+      }
+
+      div:first-of-type {
+        box-shadow: 0 -25px 0 0 #f6f6fa;
+      }
+    }
+
+    &:nth-child(3) > div {
+      &::before {
+        background-image: url('../assets/animation_500_kfrm5156.gif');
+        background-size: cover;
+      }
+
+      div:first-of-type {
+        box-shadow: 0 -25px 0 0 #f6f6fa;
+      }
+    }
+
+    &:nth-child(4) > div {
+      &::before {
+        background-image: url('../assets/animation_500_kfrm7kv0.gif');
+        background-size: cover;
+      }
+
+      div:first-of-type {
+        box-shadow: 0 -25px 0 0 #f6f6fa;
+      }
+    }
     list-style: none;
   }
 
   &__shape {
     margin: 25px;
-    height: 700px;
+    height: 720px;
     width: 367px;
     background-color: $background-default;
     border-radius: 60px;
@@ -53,15 +82,16 @@ footer {
       flex-direction: column;
       height: 350px;
       width: 367px;
-      background-color: #bb439a;
+      background-color: #f6f6fa;
       background-size: cover;
-      background-image: url('../assets/image-from-rawpixel-id-478037-jpeg.jpg');
+      background-repeat: space;
+      background-image: url('../assets/animation_500_kfrmmwm8.gif');
       border-radius: 60px 60px 0px;
     }
 
     &:hover {
       box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
-      transform: translateY(-1px);
+      // transform: translateY(-1px);
       color: #6f6f6f;
     }
 
@@ -73,7 +103,7 @@ footer {
       content: '';
       background-color: transparent;
       border-top-left-radius: 25px;
-      box-shadow: 0 -25px 0 0 #cdcdcd;
+      box-shadow: 0 -25px 0 0 #f6f6fa;
     }
   }
 
@@ -82,6 +112,16 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 7%;
+
+    p {
+      min-height: 125px;
+    }
+
+    &:nth-child(2) {
+      font-size: smaller;
+      width: 80%;
+    }
   }
 }
 
@@ -92,7 +132,7 @@ footer {
   color: black;
   display: inline-block;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 0.5em;
   border-radius: 5em;
   text-transform: uppercase;
   text-decoration: none;
