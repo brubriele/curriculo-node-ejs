@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .reset, body {
   position: absolute;
   margin: 0;
@@ -8,14 +9,41 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.typography, body {
-  font-family: 'Overpass', sans-serif;
-  line-height: 2;
-  margin: 1%; }
-
 .flex-elements {
   display: flex;
   flex-direction: column; }
+
+.typo-base, body {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.09em; }
+
+.typo-72 {
+  line-height: 6.75rem;
+  font-size: 4.5rem; }
+
+.typo-48 {
+  line-height: 4.5rem;
+  font-size: 3rem; }
+
+.typo-32 {
+  line-height: 3rem;
+  font-size: 2rem; }
+
+.typo-24 {
+  line-height: 2.25rem;
+  font-size: 1.5rem; }
+
+.typo-18 {
+  line-height: 1.6875rem;
+  font-size: 1.125rem; }
+
+.typo-16, body {
+  line-height: 1.5rem;
+  font-size: 1rem; }
+
+.typo-14 {
+  line-height: 1.3125rem;
+  font-size: 0.875rem; }
 
 header {
   position: relative;
@@ -28,6 +56,9 @@ header {
   background-size: auto;
   background-color: #f6f6fa14;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%238e5572' fill-opacity='0.5'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); }
+  header svg {
+    width: 13%;
+    align-self: center; }
 
 main,
 footer {

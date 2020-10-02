@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+// Font Weight
+$fontWeightlight: 300;
+$fontWeighnormal: 400;
+$fontWeighbold: 700;
+$fontWeighblack: 900;
+
+// Font Size
+$f72: 4.5rem;
+$f48: 3rem;
+$f32: 2rem;
+$f24: 1.5rem;
+$f18: 1.125rem;
+$f16: 1rem;
+$f14: 0.875rem;
+
+// Font Placeholders
+.typo-base {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.09em;
+}
+
+.typo-72 {
+  line-height: 6.75rem;
+  font-size: $f72;
+}
+
+.typo-48 {
+  line-height: 4.5rem;
+  font-size: $f48;
+}
+
+.typo-32 {
+  line-height: 3rem;
+  font-size: $f32;
+}
+
+.typo-24 {
+  line-height: 2.25rem;
+  font-size: $f24;
+}
+
+.typo-18 {
+  line-height: 1.6875rem;
+  font-size: $f18;
+}
+
+.typo-16 {
+  line-height: 1.5rem;
+  font-size: $f16;
+}
+
+.typo-14 {
+  line-height: 1.3125rem;
+  font-size: $f14;
+}
