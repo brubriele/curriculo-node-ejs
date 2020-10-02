@@ -47,6 +47,9 @@ footer {
 
   p {
     width: 50%;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
   }
 
   span {
@@ -58,6 +61,10 @@ footer {
     position: relative;
     bottom: 56px;
     opacity: 0.5;
+
+    @media (max-width: $sm) {
+      width: 16%;
+    }
   }
 }
 
@@ -65,4 +72,9 @@ footer {
   background: url('../../assets/profile/bruna-perfil.png') no-repeat;
   background-size: contain;
   background-position-x: right;
+  @media (max-width: $sm) {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 800px;
+  }
 }

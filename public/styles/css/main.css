@@ -79,6 +79,9 @@ footer {
     font-weight: 900; }
   .bullet-number p {
     width: 50%; }
+    @media (max-width: 576px) {
+      .bullet-number p {
+        width: 100%; } }
   .bullet-number span {
     margin-left: 34px; }
   .bullet-number svg {
@@ -86,11 +89,19 @@ footer {
     position: relative;
     bottom: 56px;
     opacity: 0.5; }
+    @media (max-width: 576px) {
+      .bullet-number svg {
+        width: 16%; } }
 
 .container-about {
   background: url("../../assets/profile/bruna-perfil.png") no-repeat;
   background-size: contain;
   background-position-x: right; }
+  @media (max-width: 576px) {
+    .container-about {
+      display: flex;
+      flex-direction: column-reverse;
+      min-height: 800px; } }
 
 .card-list {
   display: flex;
