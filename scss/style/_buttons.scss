@@ -1,9 +1,9 @@
 .explore-button {
   font-size: 0.9em;
-  background-color: #c6aab8;
+  background-color: $secondary-main;
   text-align: center;
   width: 80%;
-  color: black;
+  color: $white;
   display: inline-block;
   padding: 1em;
   margin-top: 0.5em;
@@ -16,9 +16,8 @@
 }
 
 .explore-button:hover {
-  opacity: 0.6;
-  color: white;
+  opacity: $hoverOpacity;
+  color: $white;
   box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
-  // color: #6f6f6f;
 }
