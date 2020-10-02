@@ -1,0 +1,19 @@
+$xs: 320px;
+$xs-iphone: 375px;
+$xs-android: 360px;
+$sm: 576px;
+$sm: 576px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+
+$breakpoints: (
+  'xs-iphone': 375px,
+  'xs-android': 360px,
+  'xs': 320px,
+  'sm': 576px,
+  'md': 768px,
+  'xl': 1200px,
+) !default;

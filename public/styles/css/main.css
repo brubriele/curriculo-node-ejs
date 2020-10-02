@@ -25,11 +25,11 @@
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32 {
+.typo-32, .bullet-number h2 {
   line-height: 3rem;
   font-size: 2rem; }
 
-.typo-24 {
+.typo-24, header {
   line-height: 2.25rem;
   font-size: 1.5rem; }
 
@@ -44,6 +44,10 @@
 .typo-14 {
   line-height: 1.3125rem;
   font-size: 0.875rem; }
+
+@media (max-width: 576px) {
+  body {
+    width: auto; } }
 
 header {
   position: relative;
@@ -62,8 +66,31 @@ header {
 
 main,
 footer {
+  display: flex;
+  flex-direction: column;
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px; }
+
+.bullet-number {
+  display: flex;
+  flex-direction: column; }
+  .bullet-number h2 {
+    font-weight: 900; }
+  .bullet-number p {
+    width: 50%; }
+  .bullet-number span {
+    margin-left: 34px; }
+  .bullet-number svg {
+    width: 8%;
+    position: relative;
+    bottom: 56px;
+    opacity: 0.5; }
+
+.container-about {
+  background: url("../../assets/profile/bruna-perfil.png") no-repeat;
+  background-size: contain;
+  background-position-x: right; }
 
 .card-list {
   display: flex;

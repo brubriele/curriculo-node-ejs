@@ -2,7 +2,8 @@ const data = {
   title: 'Olá, eu sou',
   name: 'Bruna G. Paula',
   profession: 'Desenvolvedora Front-end',
-  description: '...',
+  description:
+    'Compartilhar, renovar e agregar conhecimentos, desenvolvimento de novas tecnologias voltadas à iniciativas de impacto social e cultural. Sociológa de formação e entusiasta de iniciativas que visam incrementar a equidade entre gêneros e inclusão de mulheres em TI, participei de formações pela Programaria, PyLadies e Laboratoria',
   experience: [
     {
       company: 'Gauge',

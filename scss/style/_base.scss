@@ -2,9 +2,14 @@ body {
   @extend .typo-16;
   @extend .typo-base;
   @extend .reset;
+
+  @media (max-width: $sm) {
+    width: auto;
+  }
 }
 
 header {
+  @extend .typo-24;
   position: relative;
   background-size: 40px 40px;
   display: flex;
@@ -24,6 +29,40 @@ header {
 
 main,
 footer {
+  display: flex;
+  flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.bullet-number {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @extend .typo-32;
+    font-weight: $fontWeighblack;
+  }
+
+  p {
+    width: 50%;
+  }
+
+  span {
+    margin-left: 34px;
+  }
+
+  svg {
+    width: 8%;
+    position: relative;
+    bottom: 56px;
+    opacity: 0.5;
+  }
+}
+
+.container-about {
+  background: url('../../assets/profile/bruna-perfil.png') no-repeat;
+  background-size: contain;
+  background-position-x: right;
 }
