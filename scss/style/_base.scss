@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   @extend .typo-16;
   @extend .typo-base;
@@ -85,7 +89,7 @@ footer {
 
 .description-area {
   @media (max-width: $sm) {
-    padding: 20px;
+    padding: 4rem 2rem;
   }
 }
 
