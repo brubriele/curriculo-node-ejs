@@ -21,65 +21,73 @@
 
   <main>
     <section class="container-about">
-      <div class="bullet-number">
-        <h2>01. <span>Perfil</span></h2>
+      <div class="description-area">
+        <div class="bullet-number">
+          <h2>01. <span>Perfil</span></h2>
 
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="#477998" fill-opacity="1"></path>
-        </svg>
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="#477998" fill-opacity="1"></path>
+          </svg>
 
-        <p><%= description %></p>
+          <p><%= description %></p>
 
+        </div>
       </div>
 
     </section>
-    <section class="container-carrer">
-      <div class="bullet-number">
-        <h2>02. <span>Carreira</span></h2>
+    <section class="container-career">
+      <div class="description-area">
+        <div class="bullet-number">
+          <h2>02. <span>Carreira</span></h2>
 
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="#477998" fill-opacity="1"></path>
-        </svg>
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="#477998" fill-opacity="1"></path>
+          </svg>
+
+        </div>
+        <ul>
+          <% experience.map(experience => { %>
+          <li>
+            <div>
+              <strong><%= experience.company %>:</strong>
+              <strong><%= experience.office %></strong>
+              <br>
+              <span><%= experience.description %></span>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+        <ul>
+          <% education.map(education => { %>
+          <li>
+            <div>
+              <strong><%= education.institution %></strong>
+              <br>
+              <span><%= education.description %></span>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+        <ul>
+          <% skills.map(skill => { %>
+          <li><%= skill %></li>
+          <% }); %>
+        </ul>
 
       </div>
-      <ul>
-        <% experience.map(experience => { %>
-        <li>
-          <div>
-            <strong><%= experience.company %>:</strong>
-            <strong><%= experience.office %></strong>
-            <br>
-            <span><%= experience.description %></span>
-          </div>
-        </li>
-        <% }); %>
-      </ul>
-      <ul>
-        <% education.map(education => { %>
-        <li>
-          <div>
-            <strong><%= education.institution %></strong>
-            <br>
-            <span><%= education.description %></span>
-          </div>
-        </li>
-        <% }); %>
-      </ul>
-      <ul>
-        <% skills.map(skill => { %>
-        <li><%= skill %></li>
-        <% }); %>
-      </ul>
     </section>
 
 
     <section id="porftolio" class="container-portfolio">
-      <div class="bullet-number">
-        <h2>03. <span>Projetos</span></h2>
+      <div class="description-area">
+        <div class="bullet-number">
+          <h2>03. <span>Projetos</span></h2>
 
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="#477998" fill-opacity="1"></path>
-        </svg>
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" fill="#477998" fill-opacity="1"></path>
+          </svg>
+
+        </div>
 
       </div>
       <ul class="card-list">
