@@ -6,10 +6,13 @@
 </head>
 
 <body>
-  <main>
-    <h1><%= message %></h1>
-    <h2><%= error.status %></h2>
-    <pre><%= error.stack %></pre>
+  <main class="error">
+    <section>
+      <h1><%= error.status === 404 ? 'Página não encontrada' : '' %></h1>
+      <p>Infelizmente não encontramos essa página, que tal visitar a <span><a href="/">Página inicial</a></span>?</p>
+    </section>
+
+
   </main>
 </body>
 

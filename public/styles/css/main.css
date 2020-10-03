@@ -13,6 +13,16 @@
   display: flex;
   flex-direction: column; }
 
+.hover-animation, .error a, .home a {
+  background: linear-gradient(to bottom, #bad9ea 0%, #bad9ea 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size 0.2s; }
+  .hover-animation:hover, .error a:hover, .home a:hover {
+    background-size: 4px 50px; }
+
 .typo-base, body {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.09em; }
@@ -21,11 +31,11 @@
   line-height: 6.75rem;
   font-size: 4.5rem; }
 
-.typo-48 {
+.typo-48, .error h1 {
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32, .bullet-number h2 {
+.typo-32, .bullet-number h2, .error p {
   line-height: 3rem;
   font-size: 2rem; }
 
@@ -102,6 +112,35 @@ footer {
       display: flex;
       flex-direction: column-reverse;
       min-height: 800px; } }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../../assets/Scout.png") no-repeat;
+  background-size: contain;
+  height: 58vh;
+  color: #263e4b;
+  text-align: -webkit-center; }
+  @media (min-width: 992px) {
+    .error {
+      flex-direction: column-reverse;
+      height: 100vh;
+      text-align: inherit; } }
+  @media (min-width: 992px) {
+    .error h1 {
+      font-size: 1.5rem; } }
+  .error p {
+    width: 86%; }
+    @media (min-width: 992px) {
+      .error p {
+        font-size: 1.125rem;
+        line-height: 150%;
+        width: 42%; } }
+
+.home a {
+  width: 20%; }
 
 .card-list {
   display: flex;
