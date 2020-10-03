@@ -13,9 +13,11 @@ app.set('view engine', 'ejs');
 app.use('/', require('./routes'));
 app.use('/', require('./routes/curriculo'));
 
-app.listen(port, (err) => {
-  console.log(`Server is listening on ${port}`);
-});
+// app.listen(port, (err) => {
+//   console.log(`Server is listening on ${port}`);
+// });
+
+app.listen(process.env.PORT || port, () => console.log('Server is running...'));
 
 // Handling errors
 // 404
