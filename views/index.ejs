@@ -10,8 +10,7 @@
 </head>
 
 <body>
-  <!-- <a href="/curriculo#porftolio">Meu currículo</a><br>
-  <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> --> -->
+  <!-- <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> -->
   <div class="box-menu">
     <div class="box-menu__brand">
       <h1><span>
@@ -21,10 +20,18 @@
       <input type="checkbox" id="menuToggle">
       <label for="menuToggle" class="menu__icon"><i class="fa fa-bars"></i></label>
       <ul>
-        <% navItems.map(navItem => { %>
-        <!-- <a href="#"></a> -->
-        <li><a href="#"><%= navItem %> <span> /></span></a></li>
-        <% }); %>
+        <li>
+          <a href="/curriculo#porftolio">Perfil<span> /></span></a>
+
+        </li>
+        <li>
+          <a href="/curriculo#porftolio">Carreira<span> /></span></a>
+
+        </li>
+        <li>
+          <a href="/curriculo#porftolio">Projetos<span> /></span></a>
+
+        </li>
       </ul>
     </nav>
   </div>
