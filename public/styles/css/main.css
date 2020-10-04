@@ -31,15 +31,15 @@
   line-height: 6.75rem;
   font-size: 4.5rem; }
 
-.typo-48, .error h1 {
+.typo-48 {
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32, .bullet-number h2, .error p {
+.typo-32, .bullet-number h2 {
   line-height: 3rem;
   font-size: 2rem; }
 
-.typo-24, header {
+.typo-24, header, .error h1 {
   line-height: 2.25rem;
   font-size: 1.5rem; }
 
@@ -47,7 +47,7 @@
   line-height: 1.6875rem;
   font-size: 1.125rem; }
 
-.typo-16, body {
+.typo-16, body, .error p {
   line-height: 1.5rem;
   font-size: 1rem; }
 

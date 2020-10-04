@@ -111,7 +111,7 @@ footer {
   }
 
   h1 {
-    @extend .typo-48;
+    @extend .typo-24;
 
     @media (min-width: $lg) {
       font-size: $f24;
@@ -119,7 +119,7 @@ footer {
   }
 
   p {
-    @extend .typo-32;
+    @extend .typo-16;
     width: 86%;
 
     @media (min-width: $lg) {
