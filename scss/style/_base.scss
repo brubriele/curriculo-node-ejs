@@ -83,13 +83,13 @@ footer {
     background-size: 80%;
     background-position-x: center;
     flex-direction: column-reverse;
-    min-height: 105vh;
+    min-height: 720px;
   }
 }
 
 .description-area {
   @media (max-width: $sm) {
-    padding: 4rem 2rem;
+    padding: 1.5rem;
   }
 }
 

@@ -118,11 +118,11 @@ footer {
       background-size: 80%;
       background-position-x: center;
       flex-direction: column-reverse;
-      min-height: 105vh; } }
+      min-height: 720px; } }
 
 @media (max-width: 576px) {
   .description-area {
-    padding: 4rem 2rem; } }
+    padding: 1.5rem; } }
 
 .error {
   display: flex;
@@ -155,10 +155,14 @@ footer {
 
 .card-list {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   flex-flow: wrap;
   padding: 0; }
+  @media (max-width: 576px) {
+    .card-list {
+      justify-content: center; } }
   .card-list li {
+    margin-bottom: 2rem;
     list-style: none; }
     .card-list li:nth-child(2) > div::before {
       background-image: url("../../assets/animation_500_kfrmnsvu.gif");
@@ -176,7 +180,6 @@ footer {
     .card-list li:nth-child(4) > div div:first-of-type {
       box-shadow: 0 -25px 0 0 #f6f6fa; }
   .card-list__shape {
-    margin: 25px;
     height: 750px;
     width: 367px;
     background-color: #f6f6fa14;
