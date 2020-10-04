@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .reset, body {
   position: absolute;
@@ -43,7 +44,7 @@
   line-height: 2.25rem;
   font-size: 1.5rem; }
 
-.typo-18 {
+.typo-18, .box-menu__brand h1 {
   line-height: 1.6875rem;
   font-size: 1.125rem; }
 
@@ -152,6 +153,77 @@ footer {
 
 .home a {
   width: 20%; }
+
+li {
+  list-style: none; }
+
+/*Início das configurações da header*/
+.box-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  height: 100px;
+  line-height: 50px;
+  text-align: center; }
+  @media (max-width: 576px) {
+    .box-menu {
+      flex-direction: column; } }
+  .box-menu__brand {
+    width: auto;
+    height: 100%;
+    margin: 0 0 0 5%; }
+    .box-menu__brand h1 {
+      width: max-content; }
+      @media (min-width: 992px) {
+        .box-menu__brand h1 {
+          font-size: 1.5rem; } }
+
+/*Início das configurações da Navigation*/
+.menu {
+  width: 60%;
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      width: 100%;
+      height: auto; } }
+  .menu ul {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0; }
+    .menu ul a {
+      text-decoration: none;
+      height: inherit;
+      color: #222;
+      display: inline-block; }
+      .menu ul a:hover {
+        background-color: #222;
+        color: #fff; }
+      @media screen and (max-width: 768px) {
+        .menu ul a {
+          width: 100%;
+          height: 50px; } }
+    @media screen and (max-width: 768px) {
+      .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden; } }
+  .menu__icon {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .menu__icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0; } }
+    .menu__icon i {
+      font-size: 1.7em; }
+  .menu #menuToggle {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .menu #menuToggle:checked ~ ul {
+        max-height: 350px; } }
 
 .card-list {
   display: flex;

@@ -6,17 +6,35 @@
   <meta name="description" content="Curriculum and portfolio developed with ejs template, Node.js and Express">
   <title><%= title %></title>
   <link rel='stylesheet' href='/styles/css/main.css' />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <!-- <a href="/curriculo#porftolio">Meu currículo</a><br>
+  <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> --> -->
+  <div class="box-menu">
+    <div class="box-menu__brand">
+      <h1><span>
+          < </span><%= title %> <span> /> </span></h1>
+    </div>
+    <nav class="menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle" class="menu__icon"><i class="fa fa-bars"></i></label>
+      <ul>
+        <% navItems.map(navItem => { %>
+        <!-- <a href="#"></a> -->
+        <li><a href="#"><%= navItem %> <span> /></span></a></li>
+        <% }); %>
+      </ul>
+    </nav>
+  </div>
   <main class="home">
-    <h1><%= title %></h1>
-    <p>Bem vindo(a) ao <strong><%= title %></strong></p>
+    <!-- <p>Bem vindo(a) ao <strong><%= title %></strong></p>
     <a href="/curriculo#porftolio">Meu currículo</a><br>
-    <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a>
+    <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> -->
   </main>
   <footer>
-    <p>Versão <%= version %></p>
+    <!-- <p>Versão <%= version %></p> -->
   </footer>
 </body>
 
