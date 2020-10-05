@@ -1,0 +1,40 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: url('../../assets/Scout.png') no-repeat;
+  background-size: contain;
+  height: 58vh;
+  color: $error;
+  text-align: -webkit-center;
+
+  @media (min-width: $lg) {
+    flex-direction: column-reverse;
+    height: 100vh;
+    text-align: inherit;
+  }
+
+  h1 {
+    @extend .typo-24;
+
+    @media (min-width: $lg) {
+      font-size: $f24;
+    }
+  }
+
+  p {
+    @extend .typo-16;
+    width: 86%;
+
+    @media (min-width: $lg) {
+      font-size: $f18;
+      line-height: 150%;
+      width: 42%;
+    }
+  }
+
+  a {
+    @extend .hover-animation;
+  }
+}

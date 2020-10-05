@@ -24,11 +24,9 @@
       <ul>
         <li>
           <a href="/curriculo#porftolio">Perfil<span> /></span></a>
-
         </li>
         <li>
           <a href="/curriculo#porftolio">Carreira<span> /></span></a>
-
         </li>
         <li>
           <a href="/curriculo#porftolio">Projetos<span> /></span></a>
@@ -37,21 +35,20 @@
       </ul>
     </nav>
   </div>
-  <main class="home">
-
+  <main>
     <section class="rw-wrapper">
-      <h2 class="rw-sentence">
+      <h2 class="rw-wrapper__sentence">
         <span class="cursor">MEU NOME É BRUNA E EU DESENVOLVO</span>
         <br>
-        <div class="rw-words">
+        <div class="rw-wrapper__words">
           <div class="animation">
             <% animationItems.map(skill => { %>
-            <span class="type"><%= skill %><span>_</span></span>
+            <span class="animation__type"><%= skill %><span>_</span></span>
             <% }); %>
           </div>
         </div>
       </h2>
-      <input aria-disabled="true" aria-label="animação de palavras com principais skills da desenvolvedora" role="complementary" class="type-input" maxlength="22" rows="1" wrap="off" readonly>
+      <input aria-disabled="true" aria-label="animação de palavras com principais skills da desenvolvedora" role="complementary" class="rw-wrapper__type-input" maxlength="22" rows="1" wrap="off" readonly>
     </section>
   </main>
   <footer>

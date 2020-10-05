@@ -1,0 +1,50 @@
+.bullet-number {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @extend .typo-32;
+    font-weight: $fontWeighblack;
+  }
+
+  p {
+    width: 50%;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+  }
+
+  span {
+    margin-left: 34px;
+  }
+
+  svg {
+    width: 8%;
+    position: relative;
+    bottom: 56px;
+    opacity: 0.5;
+
+    @media (max-width: $sm) {
+      width: 16%;
+    }
+  }
+}
+
+.container-about {
+  background: url('../../assets/profile/bruna-perfil.png') no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  @media (max-width: $sm) {
+    display: flex;
+    background-size: 80%;
+    background-position-x: center;
+    flex-direction: column-reverse;
+    min-height: 720px;
+  }
+}
+
+.description-area {
+  @media (max-width: $sm) {
+    padding: 1.5rem;
+  }
+}

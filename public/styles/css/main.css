@@ -14,14 +14,14 @@
   display: flex;
   flex-direction: column; }
 
-.hover-animation, .error a, .home a {
+.hover-animation, main a, .error a {
   background: linear-gradient(to bottom, #bad9ea 0%, #bad9ea 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
   text-decoration: none;
   transition: background-size 0.2s; }
-  .hover-animation:hover, .error a:hover, .home a:hover {
+  .hover-animation:hover, main a:hover, .error a:hover {
     background-size: 4px 50px; }
 
 .typo-base, body {
@@ -88,210 +88,8 @@ footer {
   max-width: 960px;
   margin: 0 auto; }
 
-.bullet-number {
-  display: flex;
-  flex-direction: column; }
-  .bullet-number h2 {
-    font-weight: 900; }
-  .bullet-number p {
-    width: 50%; }
-    @media (max-width: 576px) {
-      .bullet-number p {
-        width: 100%; } }
-  .bullet-number span {
-    margin-left: 34px; }
-  .bullet-number svg {
-    width: 8%;
-    position: relative;
-    bottom: 56px;
-    opacity: 0.5; }
-    @media (max-width: 576px) {
-      .bullet-number svg {
-        width: 16%; } }
-
-.container-about {
-  background: url("../../assets/profile/bruna-perfil.png") no-repeat;
-  background-size: contain;
-  background-position-x: right; }
-  @media (max-width: 576px) {
-    .container-about {
-      display: flex;
-      background-size: 80%;
-      background-position-x: center;
-      flex-direction: column-reverse;
-      min-height: 720px; } }
-
-@media (max-width: 576px) {
-  .description-area {
-    padding: 1.5rem; } }
-
-.error {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  background: url("../../assets/Scout.png") no-repeat;
-  background-size: contain;
-  height: 58vh;
-  color: #263e4b;
-  text-align: -webkit-center; }
-  @media (min-width: 992px) {
-    .error {
-      flex-direction: column-reverse;
-      height: 100vh;
-      text-align: inherit; } }
-  @media (min-width: 992px) {
-    .error h1 {
-      font-size: 1.5rem; } }
-  .error p {
-    width: 86%; }
-    @media (min-width: 992px) {
-      .error p {
-        font-size: 1.125rem;
-        line-height: 150%;
-        width: 42%; } }
-
-.home a {
-  width: 20%; }
-
 li {
   list-style: none; }
-
-/*Início das configurações da header*/
-.box-menu {
-  display: flex;
-  justify-content: space-between;
-  width: 95vw;
-  height: 100px;
-  line-height: 50px;
-  text-align: center; }
-  @media (max-width: 576px) {
-    .box-menu {
-      flex-direction: column; } }
-  .box-menu__brand {
-    width: auto;
-    height: 100%;
-    margin: 0 0 0 5%; }
-    .box-menu__brand h1 {
-      width: max-content; }
-      @media (min-width: 992px) {
-        .box-menu__brand h1 {
-          font-size: 1.5rem; } }
-
-/*Início das configurações da Navigation*/
-.menu {
-  width: 60%;
-  height: 100%; }
-  @media screen and (max-width: 768px) {
-    .menu {
-      width: 100%;
-      height: auto; } }
-  .menu ul {
-    display: flex;
-    width: 100%;
-    height: inherit;
-    margin: 0;
-    padding: 0; }
-    .menu ul a {
-      text-decoration: none;
-      height: inherit;
-      color: #222;
-      display: inline-block; }
-      .menu ul a:hover {
-        background-color: #222;
-        color: #fff; }
-      @media screen and (max-width: 768px) {
-        .menu ul a {
-          width: 100%;
-          height: 50px; } }
-    @media screen and (max-width: 768px) {
-      .menu ul {
-        display: block;
-        max-height: 0;
-        overflow: hidden; } }
-  .menu__icon {
-    display: none; }
-    @media screen and (max-width: 768px) {
-      .menu__icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0; } }
-    .menu__icon i {
-      font-size: 1.7em; }
-  .menu #menuToggle {
-    display: none; }
-    @media screen and (max-width: 768px) {
-      .menu #menuToggle:checked ~ ul {
-        max-height: 350px; } }
-
-.type-input {
-  font-family: Consolas, monaco, monospace;
-  position: relative;
-  z-index: 9999;
-  border: none;
-  background: transparent;
-  font-size: 24px;
-  color: #444;
-  font-weight: normal;
-  width: 100%;
-  margin-left: -2px; }
-
-.rw-wrapper {
-  margin: 20px auto 0 auto;
-  padding: 10px; }
-
-.rw-sentence {
-  margin: 0; }
-
-.rw-sentence span {
-  color: #444;
-  font-weight: normal; }
-
-.rw-words {
-  display: inline;
-  font-family: Consolas, monaco, monospace; }
-
-.type {
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-  -webkit-animation: words 24s steps(48) infinite 0s; }
-
-.type:nth-child(2) {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s; }
-
-.type:nth-child(3) {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s; }
-
-@-webkit-keyframes words {
-  0% {
-    opacity: 0;
-    width: 0; }
-  2% {
-    opacity: 1; }
-  14% {
-    opacity: 1;
-    width: 48ch; }
-  15% {
-    opacity: 0; } }
-
-span > span {
-  animation: cursor 0.8s infinite; }
-
-@keyframes cursor {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 0; }
-  30% {
-    opacity: 1; }
-  90% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
 
 .card-list {
   display: flex;
@@ -382,3 +180,199 @@ span > span {
   color: #fff;
   box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px); }
+
+.bullet-number {
+  display: flex;
+  flex-direction: column; }
+  .bullet-number h2 {
+    font-weight: 900; }
+  .bullet-number p {
+    width: 50%; }
+    @media (max-width: 576px) {
+      .bullet-number p {
+        width: 100%; } }
+  .bullet-number span {
+    margin-left: 34px; }
+  .bullet-number svg {
+    width: 8%;
+    position: relative;
+    bottom: 56px;
+    opacity: 0.5; }
+    @media (max-width: 576px) {
+      .bullet-number svg {
+        width: 16%; } }
+
+.container-about {
+  background: url("../../assets/profile/bruna-perfil.png") no-repeat;
+  background-size: contain;
+  background-position-x: right; }
+  @media (max-width: 576px) {
+    .container-about {
+      display: flex;
+      background-size: 80%;
+      background-position-x: center;
+      flex-direction: column-reverse;
+      min-height: 720px; } }
+
+@media (max-width: 576px) {
+  .description-area {
+    padding: 1.5rem; } }
+
+main a {
+  width: 20%; }
+
+/*Início das configurações da header*/
+.box-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  height: 100px;
+  line-height: 50px;
+  text-align: center; }
+  @media (max-width: 576px) {
+    .box-menu {
+      flex-direction: column; } }
+  .box-menu__brand {
+    width: auto;
+    height: 100%;
+    margin: 0 0 0 5%; }
+    .box-menu__brand h1 {
+      width: max-content; }
+      @media (min-width: 992px) {
+        .box-menu__brand h1 {
+          font-size: 1.5rem; } }
+
+/*Início das configurações da Navigation*/
+.menu {
+  width: 60%;
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      width: 100%;
+      height: auto; } }
+  .menu ul {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0; }
+    .menu ul a {
+      text-decoration: none;
+      height: inherit;
+      color: #222;
+      display: inline-block; }
+      .menu ul a:hover {
+        background-color: #222;
+        color: #fff; }
+      @media screen and (max-width: 768px) {
+        .menu ul a {
+          width: 100%;
+          height: 50px; } }
+    @media screen and (max-width: 768px) {
+      .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden; } }
+  .menu__icon {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .menu__icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0; } }
+    .menu__icon i {
+      font-size: 1.7em; }
+  .menu #menuToggle {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .menu #menuToggle:checked ~ ul {
+        max-height: 350px; } }
+
+.rw-wrapper {
+  margin: 20px auto 0 auto;
+  padding: 10px; }
+  .rw-wrapper__type-input {
+    font-family: Consolas, monaco, monospace;
+    position: relative;
+    z-index: 9999;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: #444;
+    font-weight: normal;
+    width: 100%;
+    margin-left: -2px; }
+  .rw-wrapper__sentence {
+    margin: 0; }
+    .rw-wrapper__sentence span {
+      color: #444;
+      font-weight: normal; }
+  .rw-wrapper__words {
+    display: inline;
+    font-family: Consolas, monaco, monospace; }
+
+.animation__type {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: words 24s steps(48) infinite 0s;
+  -webkit-animation: words 24s steps(48) infinite 0s; }
+  .animation__type:nth-child(2) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s; }
+  .animation__type:nth-child(3) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s; }
+  .animation__type > span {
+    animation: cursor 0.8s infinite; }
+
+@keyframes words {
+  0% {
+    opacity: 0;
+    width: 0; }
+  2% {
+    opacity: 1; }
+  14% {
+    opacity: 1;
+    width: 48ch; }
+  15% {
+    opacity: 0; } }
+
+@keyframes cursor {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../../assets/Scout.png") no-repeat;
+  background-size: contain;
+  height: 58vh;
+  color: #263e4b;
+  text-align: -webkit-center; }
+  @media (min-width: 992px) {
+    .error {
+      flex-direction: column-reverse;
+      height: 100vh;
+      text-align: inherit; } }
+  @media (min-width: 992px) {
+    .error h1 {
+      font-size: 1.5rem; } }
+  .error p {
+    width: 86%; }
+    @media (min-width: 992px) {
+      .error p {
+        font-size: 1.125rem;
+        line-height: 150%;
+        width: 42%; } }

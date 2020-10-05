@@ -1,8 +1,18 @@
+// Utils
+
 @import './utils/palette';
 @import './utils/placeholder';
 @import './utils/typograpyh';
 @import './utils/breakpoints';
 
+// Base
 @import './style/base';
-@import './style/cards';
-@import './style/buttons';
+
+// Components
+@import './style/components/cards';
+@import './style/components/buttons';
+
+// Pages
+@import './style/pages/curriculo';
+@import './style/pages/home';
+@import './style/pages/error';
