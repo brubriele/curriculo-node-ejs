@@ -7,6 +7,7 @@
   <title><%= title %></title>
   <link rel='stylesheet' href='/styles/css/main.css' />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
       <h1><span>
           < </span><%= title %> <span> /> </span></h1>
     </div>
+
     <nav class="menu">
       <input type="checkbox" id="menuToggle">
       <label for="menuToggle" class="menu__icon"><i class="fa fa-bars"></i></label>
@@ -36,9 +38,21 @@
     </nav>
   </div>
   <main class="home">
-    <!-- <p>Bem vindo(a) ao <strong><%= title %></strong></p>
-    <a href="/curriculo#porftolio">Meu currículo</a><br>
-    <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> -->
+
+    <section class="rw-wrapper">
+      <h2 class="rw-sentence">
+        <span class="cursor">MEU NOME É BRUNA E EU DESENVOLVO</span>
+        <br>
+        <div class="rw-words">
+          <div class="animation">
+            <% animationItems.map(skill => { %>
+            <span class="type"><%= skill %><span>_</span></span>
+            <% }); %>
+          </div>
+        </div>
+      </h2>
+      <input aria-disabled="true" aria-label="animação de palavras com principais skills da desenvolvedora" role="complementary" class="type-input" maxlength="22" rows="1" wrap="off" readonly>
+    </section>
   </main>
   <footer>
     <!-- <p>Versão <%= version %></p> -->
