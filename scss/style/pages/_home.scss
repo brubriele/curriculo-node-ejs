@@ -1,8 +1,8 @@
-main {
-  a {
-    @extend .hover-animation;
-    width: 20%;
-  }
+.home {
+  background-color: #13131b;
+  color: #d6d3c8;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*Início das configurações da header*/
@@ -33,7 +33,7 @@ main {
 }
 /*Início das configurações da Navigation*/
 .menu {
-  width: 60%;
+  width: 20%;
   height: 100%;
 
   @media screen and (max-width: 768px) {
@@ -50,7 +50,7 @@ main {
     a {
       text-decoration: none;
       height: inherit;
-      color: #222;
+      color: #d6d3c8;
       display: inline-block;
 
       &:hover {
@@ -76,7 +76,7 @@ main {
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 4%;
     }
 
     i {
@@ -95,11 +95,26 @@ main {
 }
 
 .rw-wrapper {
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0 0;
   padding: 10px;
 
+  @media (max-width: $sm) {
+    margin: 20px auto 0 6%;
+  }
+
+  hr {
+    color: #431aaa;
+    opacity: 0.5;
+
+    border: solid 0.8px #431aaa;
+    transform: rotate(90deg);
+    padding: 20;
+    transform-origin: 0 0;
+    /* margin-right: 25px; */
+  }
+
   &__type-input {
-    font-family: Consolas, monaco, monospace;
+    // font-family: Consolas, monaco, monospace;
     position: relative;
     z-index: 9999;
     border: none;
@@ -112,11 +127,20 @@ main {
   }
 
   &__sentence {
-    margin: 0;
+    margin-left: 16%;
+
+    @media (max-width: $sm) {
+      margin-left: 6%;
+    }
 
     span {
-      color: #444;
+      @extend .typo-32;
+      color: #d6d3c8;
       font-weight: normal;
+      @media (max-width: $sm) {
+        line-height: 3rem;
+        font-size: $f32;
+      }
     }
   }
 
@@ -130,7 +154,7 @@ main {
   &__type {
     position: absolute;
     opacity: 0;
-    overflow: hidden;
+    // overflow: hidden;
     animation: words 24s steps(48) infinite 0s;
     -webkit-animation: words 24s steps(48) infinite 0s;
 
@@ -144,8 +168,13 @@ main {
       animation-delay: 8s;
     }
 
+    span {
+      color: #4cbb5f;
+    }
+
     & > span {
       animation: cursor 0.8s infinite;
+      color: #4cbb5f;
     }
   }
 }

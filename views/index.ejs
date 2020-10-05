@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="home">
   <!-- <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> -->
   <div class="box-menu">
     <div class="box-menu__brand">
@@ -37,11 +37,13 @@
   </div>
   <main>
     <section class="rw-wrapper">
+      <hr>
       <h2 class="rw-wrapper__sentence">
-        <span class="cursor">MEU NOME É BRUNA E EU DESENVOLVO</span>
+        <span class="cursor">Olá, meu nome é <span>Bruna</span> e eu desenvolvo</span>
         <br>
         <div class="rw-wrapper__words">
           <div class="animation">
+
             <% animationItems.map(skill => { %>
             <span class="animation__type"><%= skill %><span>_</span></span>
             <% }); %>
@@ -50,8 +52,11 @@
       </h2>
       <input aria-disabled="true" aria-label="animação de palavras com principais skills da desenvolvedora" role="complementary" class="rw-wrapper__type-input" maxlength="22" rows="1" wrap="off" readonly>
     </section>
+
+
   </main>
   <footer>
+    <!-- <h1>Footer</h1> -->
     <!-- <p>Versão <%= version %></p> -->
   </footer>
 </body>
