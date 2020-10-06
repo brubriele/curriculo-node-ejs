@@ -42,13 +42,16 @@ footer {
   margin: 0 auto;
 }
 
-// footer {
-//   // position: fixed;
-//   // bottom: 0;
-//   // padding: 2rem;
-//   // background-color: #696577;
-//   // width: 100vw;
-// }
+footer {
+  color: #4d22ba;
+  position: fixed;
+  bottom: 0;
+  padding: 0 2rem;
+  width: 100vw;
+  @media (max-width: $sm) {
+    height: 32vh;
+  }
+}
 
 li {
   list-style: none;

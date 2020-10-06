@@ -36,7 +36,7 @@
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32, .bullet-number h2, .rw-wrapper__sentence span {
+.typo-32, .bullet-number h2, .description-footer i, .rw-wrapper__sentence span {
   line-height: 3rem;
   font-size: 2rem; }
 
@@ -52,9 +52,13 @@
   line-height: 1.5rem;
   font-size: 1rem; }
 
-.typo-14 {
+.typo-14, .description-footer p:first-child {
   line-height: 1.3125rem;
   font-size: 0.875rem; }
+
+.typo-12, .description-footer p {
+  line-height: 1.3125rem;
+  font-size: 0.75rem; }
 
 * {
   box-sizing: border-box; }
@@ -87,6 +91,16 @@ footer {
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto; }
+
+footer {
+  color: #4d22ba;
+  position: fixed;
+  bottom: 0;
+  padding: 0 2rem;
+  width: 100vw; }
+  @media (max-width: 576px) {
+    footer {
+      height: 32vh; } }
 
 li {
   list-style: none; }
@@ -218,11 +232,27 @@ li {
   .description-area {
     padding: 1.5rem; } }
 
+html,
+body {
+  overflow-x: hidden; }
+
 .home {
   background-color: #13131b;
   color: #d6d3c8;
   width: 100vw;
   height: 100vh; }
+
+.description-footer p {
+  text-align: center;
+  width: 102%;
+  color: #45bb58; }
+
+.description-footer i {
+  color: #696577; }
+
+.description-footer .icons-box {
+  display: flex;
+  justify-content: space-evenly; }
 
 /*Início das configurações da header*/
 .box-menu {
@@ -234,11 +264,13 @@ li {
   text-align: center; }
   @media (max-width: 576px) {
     .box-menu {
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 19vh; } }
   .box-menu__brand {
     width: auto;
     height: 100%;
-    margin: 0 0 0 5%; }
+    margin: 0 0 0 5%;
+    padding: 0.3rem; }
     .box-menu__brand h1 {
       width: max-content; }
       @media (min-width: 992px) {
@@ -259,6 +291,13 @@ li {
     height: inherit;
     margin: 0;
     padding: 0; }
+    @media (max-width: 576px) {
+      .menu ul {
+        width: 100vw;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); } }
+    @media (max-width: 576px) {
+      .menu ul > li:last-child {
+        border-bottom: 1px solid #45bb58; } }
     .menu ul a {
       text-decoration: none;
       height: inherit;
@@ -282,10 +321,13 @@ li {
       .menu__icon {
         display: block;
         position: absolute;
-        top: 0;
+        top: 1%;
         right: 4%; } }
     .menu__icon i {
-      font-size: 1.7em; }
+      font-size: 1.7em;
+      padding: 0.4rem; }
+      .menu__icon i:active {
+        border: 1px solid #236; }
   .menu #menuToggle {
     display: none; }
     @media screen and (max-width: 768px) {

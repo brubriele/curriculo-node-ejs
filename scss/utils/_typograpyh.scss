@@ -14,6 +14,7 @@ $f24: 1.5rem;
 $f18: 1.125rem;
 $f16: 1rem;
 $f14: 0.875rem;
+$f12: 0.75rem;
 
 // Font Placeholders
 .typo-base {
@@ -54,4 +55,9 @@ $f14: 0.875rem;
 .typo-14 {
   line-height: 1.3125rem;
   font-size: $f14;
+}
+
+.typo-12 {
+  line-height: 1.3125rem;
+  font-size: $f12;
 }
