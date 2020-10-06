@@ -21,8 +21,9 @@ const data = {
     {
       name: 'E-Commerce FASHIONISTA',
       description:
-        'Desenvolvimento de principais funcionalidades de um e-commerce de moda feminina, o Fashionista, garantindo a melhor experiência possível para os usuários interagirem com os produtos.',
+        'Um E-commerce de moda, o Fashionista, garantindo a melhor experiência possível para os usuários interagirem com os produtos.',
       repository: 'https://github.com/brubriele/aceleracao-react',
+      stack: 'ReactJS | Javascript | HTML/CSS Sass',
     },
     {
       name: 'Instagram Réplica',

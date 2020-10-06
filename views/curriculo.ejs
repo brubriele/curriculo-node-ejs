@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Curriculum and portfolio developed with ejs template, Node.js and Express">
   <link rel='stylesheet' href='/styles/css/main.css' />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -78,11 +79,10 @@
         <% projects.map(projects => { %>
         <li>
           <div class="card-list__shape">
-            <div class="card-list__shape--small"></div>
             <div class="text">
               <h2><%= projects.name %></h2>
               <p><%= projects.description %></p>
-              <a target="_blank" href="<%= projects.repository %>" class="explore-button">Explore</a>
+              <a target="_blank" href="<%= projects.repository %>"><i class="fa fa-external-link-alt"></i></a>
 
             </div>
 
@@ -91,6 +91,9 @@
       </ul>
     </section>
   </main>
+  <footer>
+
+  </footer>
 
 </body>
 
