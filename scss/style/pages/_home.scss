@@ -203,7 +203,7 @@ body {
   &__type {
     position: absolute;
     opacity: 0;
-    // overflow: hidden;
+    overflow: hidden;
     animation: words 24s steps(48) infinite 0s;
     -webkit-animation: words 24s steps(48) infinite 0s;
 
@@ -217,6 +217,19 @@ body {
       animation-delay: 8s;
     }
 
+    &:nth-child(4) {
+      -webkit-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+    &:nth-child(5) {
+      -webkit-animation-delay: 16s;
+      animation-delay: 16s;
+    }
+    &:nth-child(6) {
+      -webkit-animation-delay: 20s;
+      animation-delay: 20s;
+    }
+
     span {
       color: #4cbb5f;
     }
@@ -225,6 +238,23 @@ body {
       animation: cursor 0.8s infinite;
       color: #4cbb5f;
     }
+  }
+}
+
+@-webkit-keyframes words {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 1;
+    width: 48ch;
+  }
+  15% {
+    opacity: 0;
   }
 }
 

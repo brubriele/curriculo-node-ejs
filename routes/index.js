@@ -10,7 +10,14 @@ router.get('/', (req, res, next) => {
       '/curriculo#porftolio',
       '/curriculo#porftolio',
     ],
-    animationItems: ['Perfil', 'Carreira', 'Projetos'],
+    animationItems: [
+      'projetos',
+      'resiliência',
+      'layouts',
+      'criatividade',
+      'bibliotecas',
+      'autoaprendizagem',
+    ],
     version: '0.0.0',
   });
 });
