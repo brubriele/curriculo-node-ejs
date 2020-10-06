@@ -9,6 +9,7 @@
   <meta name="description" content="Curriculum and portfolio developed with ejs template, Node.js and Express">
   <link rel='stylesheet' href='/styles/css/main.css' />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/0999dad2cf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -82,8 +83,12 @@
             <div class="text">
               <h2><%= projects.name %></h2>
               <p><%= projects.description %></p>
-              <a target="_blank" href="<%= projects.repository %>"><i class="fa fa-external-link-alt"></i></a>
-
+              <a target="_blank" href="<%= projects.repository %>"></a>
+              <div class="card-list__shape--stack">
+                | <i class="<%= projects.stack1 ? projects.stack1 : 'hidden-item'%>"></i>
+                | <i class="<%= projects.stack2 ? projects.stack2 : 'hidden-item'%>"></i>
+                | <i class="<%= projects.stack3 ? projects.stack3 : 'hidden-item' %>">|</i>
+              </div>
             </div>
 
         </li>
@@ -94,6 +99,7 @@
   <footer>
 
   </footer>
+
 
 </body>
 

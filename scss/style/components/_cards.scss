@@ -62,7 +62,8 @@
       background-color: #3ea25226;
       background-image: url(../../assets/fahionista-project-portfolio.gif);
       border-radius: 12px 60px 0px;
-      box-shadow: 0 8px 22px -12px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+        0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
       -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
@@ -104,6 +105,12 @@
       box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
       color: #6f6f6f;
     }
+
+    &--stack {
+      .hidden-item {
+        display: none;
+      }
+    }
   }
 
   .text {
@@ -114,13 +121,24 @@
     margin-left: 7%;
     color: #1c265a;
 
+    &:nth-child(2) {
+      font-size: smaller;
+      width: 80%;
+    }
     p {
       min-height: 125px;
     }
 
-    &:nth-child(2) {
-      font-size: smaller;
-      width: 80%;
+    svg {
+      width: 12%;
+      align-self: start;
+      path {
+        fill: #48bd5f;
+      }
+    }
+    .fa-node-js {
+      @extend .typo-32;
+      color: #696577;
     }
   }
 }
