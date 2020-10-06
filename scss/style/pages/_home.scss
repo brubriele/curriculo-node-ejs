@@ -57,6 +57,9 @@ body {
       @media (min-width: $lg) {
         font-size: $f24;
       }
+      & > span {
+        color: #431aaa;
+      }
     }
   }
 }

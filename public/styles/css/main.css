@@ -36,7 +36,7 @@
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32, .bullet-number h2, .description-footer i, .rw-wrapper__sentence span {
+.typo-32, header h1, .bullet-number h2, .description-footer i, .rw-wrapper__sentence span {
   line-height: 3rem;
   font-size: 2rem; }
 
@@ -63,9 +63,12 @@
 * {
   box-sizing: border-box; }
 
-@media (max-width: 576px) {
-  body {
-    width: auto; } }
+body {
+  background-color: #13131b;
+  color: #d6d3c8; }
+  @media (max-width: 576px) {
+    body {
+      width: auto; } }
 
 header {
   position: relative;
@@ -73,17 +76,19 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10rem 1rem;
-  text-align: center;
-  background-size: auto;
-  background-color: #f6f6fa14;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%238e5572' fill-opacity='0.5'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); }
+  padding: 4rem 1rem;
+  text-align: center; }
   @media (max-width: 576px) {
     header {
       margin-bottom: 15px; } }
   header svg {
     width: 13%;
     align-self: center; }
+  header p {
+    font-size: 1rem; }
+  header hr {
+    width: 30%;
+    border: 1px solid #4d22ba; }
 
 main,
 footer {
@@ -136,7 +141,7 @@ li {
     width: 367px;
     background-color: #f6f6fa14;
     border-radius: 60px;
-    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.9); }
     .card-list__shape::before {
       transform: scaleX(-1);
       content: '';
@@ -200,6 +205,10 @@ li {
   flex-direction: column; }
   .bullet-number h2 {
     font-weight: 900; }
+    .bullet-number h2 > span:first-of-type {
+      animation: cursor 0.8s infinite;
+      color: #4cbb5f;
+      margin: 0; }
   .bullet-number p {
     width: 50%; }
     @media (max-width: 576px) {
@@ -276,6 +285,8 @@ body {
       @media (min-width: 992px) {
         .box-menu__brand h1 {
           font-size: 1.5rem; } }
+      .box-menu__brand h1 > span {
+        color: #431aaa; }
 
 /*Início das configurações da Navigation*/
 .menu {

@@ -5,6 +5,14 @@
   h2 {
     @extend .typo-32;
     font-weight: $fontWeighblack;
+
+    & > span {
+      &:first-of-type {
+        animation: cursor 0.8s infinite;
+        color: #4cbb5f;
+        margin: 0;
+      }
+    }
   }
 
   p {
