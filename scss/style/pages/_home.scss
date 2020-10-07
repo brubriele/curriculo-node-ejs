@@ -4,7 +4,7 @@ body {
 }
 
 .home {
-  background-color: #13131b;
+  // background-color: #13131b;
   color: #d6d3c8;
   width: 100vw;
   height: 100vh;
@@ -14,10 +14,11 @@ body {
   p {
     @extend .typo-12;
     text-align: center;
-    width: 102%;
+    width: 104%;
     color: #45bb58;
     &:first-child {
       @extend .typo-14;
+      margin: 0;
     }
   }
 
@@ -49,7 +50,7 @@ body {
     width: auto;
     height: 100%;
     margin: 0 0 0 5%;
-    padding: 0.3rem;
+    padding: 1rem 0.3rem;
 
     h1 {
       @extend .typo-18;
@@ -58,13 +59,14 @@ body {
         font-size: $f24;
       }
       & > span {
-        color: #431aaa;
+        color: #fc5aff;
       }
     }
   }
 }
 /*Início das configurações da Navigation*/
 .menu {
+  @extend .typo-16;
   width: 20%;
   height: 100%;
 
@@ -86,6 +88,10 @@ body {
         0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+
+    li {
+      height: 44px;
     }
 
     & > li:last-child {
@@ -128,7 +134,7 @@ body {
     }
 
     i {
-      font-size: 1.7em;
+      @extend .typo-24;
       padding: 0.4rem;
 
       &:active {
@@ -199,10 +205,11 @@ body {
   }
 
   hr {
-    color: #431aaa;
+    color: #fc5aff;
+
     opacity: 0.5;
 
-    border: solid 0.8px #431aaa;
+    border: solid 0.8px #fc5aff;
     transform: rotate(90deg);
     padding: 20;
     transform-origin: 0 0;
@@ -210,23 +217,27 @@ body {
   }
 
   &__type-input {
-    // font-family: Consolas, monaco, monospace;
+    font-family: Consolas, monaco, monospace;
     position: relative;
     z-index: 9999;
     border: none;
     background: transparent;
-    font-size: 24px;
-    color: #444;
+    font-size: 10px;
+    color: red;
     font-weight: normal;
     width: 100%;
     margin-left: -2px;
   }
 
   &__sentence {
+    // @extend .typo-12;
     margin-left: 16%;
 
     @media (max-width: $sm) {
+      position: relative;
+      width: 56%;
       margin-left: 6%;
+      top: 32%;
     }
 
     span {

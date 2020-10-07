@@ -2,11 +2,19 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: 50px 350px 50px;
+  grid-template-areas: 'h' 'm' 'f';
+  height: 100%;
+  width: 100%;
+}
+
 body {
   @extend .typo-16;
   @extend .typo-base;
   @extend .reset;
-  background-color: #13131b;
+  background-color: #283053;
   color: #d6d3c8;
 
   @media (max-width: $sm) {
@@ -15,13 +23,12 @@ body {
 }
 
 header {
+  grid-area: h;
   @extend .typo-24;
-  position: relative;
-  background-size: 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem 1rem;
+  padding: 4rem 0%;
   text-align: center;
 
   @media (max-width: $sm) {
@@ -45,7 +52,9 @@ header {
     border: 1px solid #4d22ba;
   }
 }
-
+main {
+  grid-area: m;
+}
 main,
 footer {
   display: flex;
@@ -55,7 +64,8 @@ footer {
 }
 
 footer {
-  color: #4d22ba;
+  grid-area: f;
+  color: #fc5aff;
   position: fixed;
   bottom: 0;
   padding: 0 2rem;
