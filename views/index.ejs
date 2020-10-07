@@ -12,65 +12,70 @@
 
 <body class="home">
   <!-- <a target="_blank" href="https://woliveiras.com.br/posts/criando-um-curr%C3%ADculo-com-node-js-express-e-templates-ejs/">Referência Blog WOliveira</a> -->
-  <div class="box-menu">
-    <div class="box-menu__brand">
-      <h1><span>
-          < </span><%= title %> <span> /> </span></h1>
-    </div>
+  <div class="container">
+    <header>
 
-    <nav class="menu">
-      <input type="checkbox" id="menuToggle">
-      <label for="menuToggle" class="menu__icon"><i class="fa fa-bars"></i></label>
-      <ul>
-        <li>
-          <a href="/curriculo#porftolio">Perfil<span> /></span></a>
-        </li>
-        <li>
-          <a href="/curriculo#porftolio">Carreira<span> /></span></a>
-        </li>
-        <li>
-          <a href="/curriculo#porftolio">Projetos<span> /></span></a>
-
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <main>
-    <section class="rw-wrapper">
-      <hr>
-      <h2 class="rw-wrapper__sentence">
-        <span class="cursor">Olá, meu nome é <span>Bruna</span> e eu desenvolvo</span>
-        <br>
-        <div class="rw-wrapper__words">
-          <div class="animation">
-
-            <% animationItems.map(skill => { %>
-            <span class="animation__type"><%= skill %><span>_</span></span>
-            <% }); %>
-          </div>
+      <div class="box-menu">
+        <div class="box-menu__brand">
+          <h1><span>
+              < </span><%= title %> <span> /> </span></h1>
         </div>
-      </h2>
-      <input aria-disabled="true" aria-label="animação de palavras com principais skills da desenvolvedora" role="complementary" class="rw-wrapper__type-input" maxlength="22" rows="1" wrap="off" readonly>
-    </section>
 
+        <nav class="menu">
+          <input type="checkbox" id="menuToggle">
+          <label for="menuToggle" class="menu__icon"><i class="fa fa-bars"></i></label>
+          <ul>
+            <li>
+              <a href="/curriculo#porftolio">Perfil<span> /></span></a>
+            </li>
+            <li>
+              <a href="/curriculo#porftolio">Carreira<span> /></span></a>
+            </li>
+            <li>
+              <a href="/curriculo#porftolio">Projetos<span> /></span></a>
 
-  </main>
-  <footer>
-    <p>Footer <span> /></span></p>
-    <div class="description-footer">
-
-      <p>Desenvolvido com HTML, CSS, Javascript vanilla, Node.JS e EJS template. </p>
-      <p>Todos os direitos reservados.<br>Bruna G. Paula</p>
-      </p>
-
-      <!-- <p>Versão <%= version %></p> -->
-      <div class="icons-box">
-        <a target="_blank" href="https://github.com/brubriele"><i class="fa fa-github-alt"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/bruna-gabriele-de-paula"><i class="fa fa-linkedin"></i></a>
-        <a target="_blank" href="mailto:brunagabriele.paula@gmail.com"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </footer>
+    </header>
+    <main>
+      <section class="rw-wrapper">
+        <hr>
+        <h2 class="rw-wrapper__sentence">
+          <span class="cursor">Olá, meu nome é <span>Bruna</span> e eu desenvolvo</span>
+          <br>
+          <div class="rw-wrapper__words">
+            <div class="animation">
+
+              <% animationItems.map(skill => { %>
+              <span class="animation__type"><%= skill %><span>_</span></span>
+              <% }); %>
+            </div>
+          </div>
+        </h2>
+        <input aria-disabled="true" aria-label="animação de palavras com principais skills da desenvolvedora" role="complementary" class="rw-wrapper__type-input" maxlength="22" rows="1" wrap="off" readonly>
+      </section>
+
+
+    </main>
+    <footer>
+      <p>Footer <span> /></span></p>
+      <div class="description-footer">
+
+        <p>Desenvolvido com HTML, CSS, Javascript vanilla, Node.JS e EJS template. </p>
+        <p>Todos os direitos reservados.<br>Bruna G. Paula</p>
+        </p>
+
+        <!-- <p>Versão <%= version %></p> -->
+        <div class="icons-box">
+          <a target="_blank" href="https://github.com/brubriele"><i class="fa fa-github-alt"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/bruna-gabriele-de-paula"><i class="fa fa-linkedin"></i></a>
+          <a target="_blank" href="mailto:brunagabriele.paula@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
