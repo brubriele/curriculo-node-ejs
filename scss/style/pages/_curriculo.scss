@@ -3,9 +3,18 @@
     max-width: 960px;
     margin: 0 auto;
 
+    padding-bottom: 14rem;
     @media (min-width: $sm) {
       width: 50%;
     }
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 27vh;
   }
   .bullet-number {
     display: flex;

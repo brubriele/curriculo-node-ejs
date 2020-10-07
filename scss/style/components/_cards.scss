@@ -1,6 +1,6 @@
 .card-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: wrap;
   padding: 0;
 
@@ -9,7 +9,7 @@
   }
 
   li {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     &:nth-child(2) > div {
       &::before {
         background-image: url('../../assets/insta-project-portfolio.gif');

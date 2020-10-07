@@ -36,7 +36,7 @@
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32, header h1, .curriculum .bullet-number h2, .description-footer i, .rw-wrapper__sentence span {
+.typo-32, header h1, .description-footer i, .curriculum .bullet-number h2, .rw-wrapper__sentence span {
   line-height: 3rem;
   font-size: 2rem; }
 
@@ -105,6 +105,26 @@ footer {
   display: flex;
   flex-direction: column; }
 
+.description-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .description-footer p {
+    text-align: center;
+    width: 104%;
+    color: #45bb58; }
+    .description-footer p:first-child {
+      margin: 0; }
+  .description-footer i {
+    color: #696577; }
+  .description-footer .icons-box {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly; }
+    @media (max-width: 576px) {
+      .description-footer .icons-box {
+        width: 56%; } }
+
 footer {
   grid-area: f;
   color: #fc5aff;
@@ -155,14 +175,14 @@ li {
 
 .card-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: wrap;
   padding: 0; }
   @media (max-width: 576px) {
     .card-list {
       justify-content: center; } }
   .card-list li {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     list-style: none; }
     .card-list li:nth-child(2) > div::before {
       background-image: url("../../assets/insta-project-portfolio.gif"); }
@@ -275,10 +295,18 @@ li {
 
 .curriculum main {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 14rem; }
   @media (min-width: 576px) {
     .curriculum main {
       width: 50%; } }
+
+.curriculum footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 27vh; }
 
 .curriculum .bullet-number {
   display: flex;
@@ -354,26 +382,6 @@ body {
   color: #d6d3c8;
   width: 100vw;
   height: 100vh; }
-
-.description-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .description-footer p {
-    text-align: center;
-    width: 104%;
-    color: #45bb58; }
-    .description-footer p:first-child {
-      margin: 0; }
-  .description-footer i {
-    color: #696577; }
-  .description-footer .icons-box {
-    display: flex;
-    width: 30%;
-    justify-content: space-evenly; }
-    @media (max-width: 576px) {
-      .description-footer .icons-box {
-        width: 56%; } }
 
 /*Início das configurações da header*/
 .box-menu {

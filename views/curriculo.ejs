@@ -30,8 +30,10 @@
 
         </div>
       </div>
+      <a href="#career">ancora</a>
 
     </section>
+
     <section class="container-career">
       <div class="description-area">
         <div class="bullet-number">
@@ -69,6 +71,42 @@
       </div>
     </section>
 
+    <section id="career" class="container-career">
+      <div class="description-area">
+        <div class="bullet-number">
+          <h2>02<span>_</span><span>Carreira </span></h2>
+        </div>
+        <ul>
+          <% experience.map(experience => { %>
+          <li>
+            <div>
+              <strong><%= experience.company %>:</strong>
+              <strong><%= experience.office %></strong>
+              <br>
+              <span><%= experience.description %></span>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+        <ul>
+          <% education.map(education => { %>
+          <li>
+            <div>
+              <strong><%= education.institution %></strong>
+              <br>
+              <span><%= education.description %></span>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+        <ul>
+          <% skills.map(skill => { %>
+          <li><%= skill %></li>
+          <% }); %>
+        </ul>
+
+      </div>
+    </section>
 
     <section id="porftolio" class="container-portfolio">
       <div class="description-area">
@@ -103,6 +141,19 @@
       </ul>
     </section>
   </main>
+  <footer>
+    <p>Footer <span> /></span></p>
+    <div class="description-footer">
+
+      <p>Desenvolvido com HTML, CSS, Javascript vanilla, Node.JS e EJS template. </p>
+      <p>Todos os direitos reservados.<br>Bruna G. Paula<br></p>
+      <div class="icons-box">
+        <a target="_blank" href="https://github.com/brubriele"><i class="fa fa-github-alt"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/bruna-gabriele-de-paula"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" href="mailto:brunagabriele.paula@gmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

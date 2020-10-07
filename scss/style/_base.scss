@@ -64,6 +64,36 @@ footer {
   // margin: 0 auto;
 }
 
+.description-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    @extend .typo-12;
+    text-align: center;
+    width: 104%;
+    color: #45bb58;
+    &:first-child {
+      @extend .typo-14;
+      margin: 0;
+    }
+  }
+
+  i {
+    @extend .typo-32;
+    color: #696577;
+  }
+
+  .icons-box {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    @media (max-width: $sm) {
+      width: 56%;
+    }
+  }
+}
+
 footer {
   grid-area: f;
   color: #fc5aff;
