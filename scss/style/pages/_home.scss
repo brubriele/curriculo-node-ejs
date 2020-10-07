@@ -11,6 +11,9 @@ body {
 }
 
 .description-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   p {
     @extend .typo-12;
     text-align: center;
@@ -29,7 +32,11 @@ body {
 
   .icons-box {
     display: flex;
+    width: 30%;
     justify-content: space-evenly;
+    @media (max-width: $sm) {
+      width: 56%;
+    }
   }
 }
 
@@ -75,6 +82,11 @@ body {
     height: auto;
   }
 
+  @media screen and (min-width: $sm) {
+    width: 28%;
+    padding: 1rem 0.3rem;
+  }
+
   ul {
     display: flex;
     width: 100%;
@@ -92,6 +104,10 @@ body {
 
     li {
       height: 44px;
+
+      @media screen and (min-width: $sm) {
+        width: 32%;
+      }
     }
 
     & > li:last-child {
@@ -101,14 +117,23 @@ body {
     }
 
     a {
+      @extend .typo-18;
       text-decoration: none;
       height: inherit;
       color: #d6d3c8;
       display: inline-block;
+      background: linear-gradient(to right, #45bb58, #45bb58 50%, #d6d3c8 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none; // text decorations are clipped in WebKit browsers
 
       &:hover {
-        background-color: #222;
-        color: #fff;
+        background-position: 0 100%;
+        // color: #d61e1e;
       }
       @media screen and (max-width: 768px) {
         width: 100%;
@@ -197,8 +222,10 @@ body {
 }
 
 .rw-wrapper {
-  margin: 20px auto 0 0;
+  // margin: 20px auto 0 0;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $sm) {
     margin: 20px auto 0 6%;
@@ -206,7 +233,7 @@ body {
 
   hr {
     color: #fc5aff;
-
+    width: 28%;
     opacity: 0.5;
 
     border: solid 0.8px #fc5aff;
@@ -214,6 +241,17 @@ body {
     padding: 20;
     transform-origin: 0 0;
     /* margin-right: 25px; */
+
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+
+    @media (min-width: $sm) {
+      position: relative;
+      width: 30%;
+      right: 29%;
+      bottom: 68%;
+    }
   }
 
   &__type-input {
