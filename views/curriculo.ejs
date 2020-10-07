@@ -124,7 +124,12 @@
             <div class="text">
               <h2><%= projects.name %></h2>
               <p><%= projects.description %></p>
-              <a target="_blank" href="<%= projects.repository %>"><i class="fas fa-external-link-alt"></i></a>
+              <div class="text__links">
+                <a target="_blank" href="<%= projects.repository %>"><i title="Link para o projeto" class="fas fa-external-link-alt"></i></a>
+                <a target="_blank" href="<%= projects.repository %>"><i title="Repositório do projeto no Github" class="fas fa-code-branch "></i></i></a>
+              </div>
+
+
 
 
 
