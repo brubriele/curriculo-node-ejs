@@ -101,6 +101,25 @@
     }
   }
 
+  .container-career {
+    h3 {
+      margin: 0;
+    }
+    ul {
+      li {
+        margin-bottom: 3rem;
+      }
+    }
+
+    .highlight {
+      mark {
+        padding: 0 0.1rem;
+        font-weight: bolder;
+        opacity: 0.8;
+      }
+    }
+  }
+
   .description-area {
     @media (max-width: $sm) {
       padding: 1.5rem;

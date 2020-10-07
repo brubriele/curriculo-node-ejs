@@ -8,12 +8,17 @@ const data = {
     {
       company: 'Gauge',
       office: 'Analista Adobe AEM | Front-end',
-      description: '...',
+      description:
+        'Desenvolvimento em front-end voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL, HTML, Less, JavaScript e React JS.',
+      firstHighlight: 'Adobe AEM 6.5',
+      scndHighlight: 'JavaScript',
+      thirdHighlight: 'React',
     },
     {
       company: 'everis',
       office: 'Solutions Assistant | Front-end',
-      description: '...',
+      description:
+        'Desenvolvimento em front-end voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.4, utilizando HTL, HTML, SCSS, JavaScript, com foco em acessibilidade e normas WCAG.',
     },
   ],
 

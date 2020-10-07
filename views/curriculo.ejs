@@ -44,11 +44,16 @@
           <% experience.map(experience => { %>
           <li>
             <div>
-              <strong><%= experience.company %>:</strong>
-              <strong><%= experience.office %></strong>
+              <h3><%= experience.company %> | <%= experience.office %></h3>
               <br>
               <span><%= experience.description %></span>
             </div>
+            <p class="highlight">
+              <mark><%= experience.firstHighlight %></mark>
+              <mark><%= experience.scndHighlight %></mark>
+              <mark><%= experience.thirdHighlight %></mark>
+            </p>
+
           </li>
           <% }); %>
         </ul>

@@ -70,13 +70,6 @@
   height: 100%;
   width: 100%; }
 
-body {
-  background-color: #283053;
-  color: #d6d3c8; }
-  @media (max-width: 576px) {
-    body {
-      width: auto; } }
-
 header {
   grid-area: h;
   display: flex;
@@ -96,17 +89,29 @@ header {
     width: 30%;
     border: solid 0.8px #fc5aff; }
 
+body {
+  background-color: #283053;
+  color: #d6d3c8; }
+  @media (max-width: 576px) {
+    body {
+      width: auto; } }
+
 main {
   grid-area: m;
   justify-content: center; }
+
+@media (min-width: 576px) {
+  section {
+    margin-bottom: 3rem; } }
+
+@media (max-width: 576px) {
+  ul {
+    padding: 0; } }
 
 main,
 footer {
   display: flex;
   flex-direction: column; }
-
-section {
-  margin-bottom: 3rem; }
 
 .description-footer {
   display: flex;
@@ -353,6 +358,17 @@ li {
       background-position-x: center;
       flex-direction: column-reverse;
       min-height: 720px; } }
+
+.curriculum .container-career h3 {
+  margin: 0; }
+
+.curriculum .container-career ul li {
+  margin-bottom: 3rem; }
+
+.curriculum .container-career .highlight mark {
+  padding: 0 0.1rem;
+  font-weight: bolder;
+  opacity: 0.8; }
 
 @media (max-width: 576px) {
   .curriculum .description-area {
