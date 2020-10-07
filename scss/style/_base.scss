@@ -49,18 +49,19 @@ header {
 
   hr {
     width: 30%;
-    border: 1px solid #4d22ba;
+    border: 1px solid #fc5aff;
   }
 }
 main {
   grid-area: m;
+  justify-content: center;
 }
 main,
 footer {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
+  // max-width: 960px;
+  // margin: 0 auto;
 }
 
 footer {
@@ -112,6 +113,9 @@ footer {
         opacity: 1;
       }
     }
+  }
+  @media (min-width: $sm) {
+    padding: 0 6.2rem;
   }
 }
 
