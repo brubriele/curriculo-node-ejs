@@ -83,9 +83,14 @@
             <div class="text">
               <h2><%= projects.name %></h2>
               <p><%= projects.description %></p>
-              <a target="_blank" href="<%= projects.repository %>"></a>
+              <a target="_blank" href="<%= projects.repository %>"><i class="fas fa-external-link-alt"></i></a>
+
+
+
+
               <div class="card-list__shape--stack">
-                | <i class="<%= projects.stack1 ? projects.stack1 : 'hidden-item'%>"></i>
+                <span>Stack:</span>
+                <i class="<%= projects.stack1 ? projects.stack1 : 'hidden-item'%>"></i>
                 | <i class="<%= projects.stack2 ? projects.stack2 : 'hidden-item'%>"></i>
                 | <i class="<%= projects.stack3 ? projects.stack3 : 'hidden-item' %>">|</i>
               </div>
@@ -96,9 +101,6 @@
       </ul>
     </section>
   </main>
-  <footer>
-
-  </footer>
 
 
 </body>

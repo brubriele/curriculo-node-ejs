@@ -36,7 +36,7 @@
   line-height: 4.5rem;
   font-size: 3rem; }
 
-.typo-32, header h1, .card-list .text .fa-node-js, .bullet-number h2, .description-footer i, .rw-wrapper__sentence span {
+.typo-32, header h1, .bullet-number h2, .description-footer i, .rw-wrapper__sentence span {
   line-height: 3rem;
   font-size: 2rem; }
 
@@ -44,7 +44,7 @@
   line-height: 2.25rem;
   font-size: 1.5rem; }
 
-.typo-18, .box-menu__brand h1 {
+.typo-18, .card-list .text h2, .card-list .text i, .box-menu__brand h1 {
   line-height: 1.6875rem;
   font-size: 1.125rem; }
 
@@ -179,7 +179,7 @@ li {
       background-color: #3ea25226;
       background-image: url(../../assets/fahionista-project-portfolio.gif);
       border-radius: 12px 60px 0px;
-      box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 16px 12px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
       -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       /* ----------------------------------------------
@@ -211,27 +211,33 @@ li {
     .card-list__shape:hover {
       box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
       color: #6f6f6f; }
-    .card-list__shape--stack .hidden-item {
-      display: none; }
+    .card-list__shape--stack {
+      align-self: start; }
+      .card-list__shape--stack span {
+        font-family: Consolas, monaco, monospace;
+        font-weight: 900; }
+      .card-list__shape--stack .hidden-item {
+        display: none; }
+    .card-list__shape a {
+      align-self: start; }
   .card-list .text {
-    padding: 10px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
-    margin-left: 7%;
+    padding: 1.5rem;
     color: #1c265a; }
     .card-list .text:nth-child(2) {
       font-size: smaller;
       width: 80%; }
+    .card-list .text h2 {
+      min-height: 48px;
+      margin-bottom: 0;
+      font-family: Consolas, monaco, monospace; }
     .card-list .text p {
-      min-height: 125px; }
-    .card-list .text svg {
-      width: 12%;
-      align-self: start; }
-      .card-list .text svg path {
-        fill: #48bd5f; }
-    .card-list .text .fa-node-js {
-      color: #696577; }
+      min-height: 168px; }
+    .card-list .text i {
+      align-self: start;
+      padding: 0.2rem 0; }
 
 .explore-button {
   font-size: 0.9em;
