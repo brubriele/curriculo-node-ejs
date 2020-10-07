@@ -26,6 +26,7 @@ const data = {
       stack1: 'fab fa-react',
       stack2: 'fab fa-js-square',
       stack3: 'fab fa-sass',
+      fade: 'fade-right',
     },
     {
       name: 'Instagram Réplica',
@@ -35,6 +36,7 @@ const data = {
       stack1: 'fab fa-html5',
       stack2: 'fab fa-css3',
       stack3: 'fab fa-sass',
+      fade: 'fade-left',
     },
     {
       name: 'Conversor de Escalas Musicais',
@@ -43,6 +45,7 @@ const data = {
       repository: 'https://github.com/brubriele/lib-scale-chord-convert',
       stack1: 'fab fa-npm',
       stack2: 'fab fa-js-square',
+      fade: 'fade-right',
     },
 
     {
@@ -53,6 +56,7 @@ const data = {
       stack1: 'fab fa-react',
       stack2: 'fab fa-js-square',
       stack3: 'fab fa-sass',
+      fade: 'fade-left',
     },
   ],
   education: [

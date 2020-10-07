@@ -105,6 +105,9 @@ footer {
   display: flex;
   flex-direction: column; }
 
+section {
+  margin-bottom: 3rem; }
+
 .description-footer {
   display: flex;
   flex-direction: column;

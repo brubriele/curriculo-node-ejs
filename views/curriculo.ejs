@@ -11,6 +11,8 @@
 
   <link rel='stylesheet' href='/styles/css/main.css' />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/0999dad2cf.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,11 +32,10 @@
 
         </div>
       </div>
-      <a href="#career">ancora</a>
 
     </section>
 
-    <section class="container-career">
+    <section data-aos="fade-up" class="container-career">
       <div class="description-area">
         <div class="bullet-number">
           <h2>02<span>_</span><span>Carreira </span></h2>
@@ -71,7 +72,7 @@
       </div>
     </section>
 
-    <section id="career" class="container-career">
+    <section data-aos="fade-up" class="container-career">
       <div class="description-area">
         <div class="bullet-number">
           <h2>02<span>_</span><span>Carreira </span></h2>
@@ -118,7 +119,7 @@
 
       <ul class="card-list">
         <% projects.map(projects => { %>
-        <li>
+        <li data-aos="<%= projects.fade %>">
           <div class="card-list__shape">
             <div class="text">
               <h2><%= projects.name %></h2>
@@ -155,7 +156,9 @@
     </div>
   </footer>
 
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
