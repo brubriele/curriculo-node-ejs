@@ -1,5 +1,5 @@
 const data = {
-  title: 'Olá, eu sou',
+  title: 'Bruna G. de Paula - Desenvolvedora de Software',
   name: 'Bruna G. Paula',
   profession: 'Desenvolvedora de Software',
   description:

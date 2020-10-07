@@ -3,7 +3,8 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   res.render('index', {
-    title: 'BrunaGPaula',
+    title: 'Bruna G. de Paula - Desenvolvedora de Software',
+    titleHeader: 'BrunaGPaula',
     navItems: ['Perfil', 'Carreira', 'Projetos'],
     linkItems: [
       '/curriculo#porftolio',
