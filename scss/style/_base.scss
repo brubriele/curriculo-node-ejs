@@ -160,6 +160,10 @@ footer {
   @media (min-width: $sm) {
     padding: 0 6.2rem;
   }
+
+  @media (max-width: $md) and (min-width: $xs) {
+    padding: 0 3.6rem;
+  }
 }
 
 li {

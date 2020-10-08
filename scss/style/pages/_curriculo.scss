@@ -34,9 +34,12 @@
     }
 
     p {
-      width: 50%;
       @media (max-width: $sm) {
         width: 100%;
+      }
+
+      @media (min-width: $lg) {
+        width: 50%;
       }
     }
 
@@ -92,7 +95,7 @@
       }
     }
 
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
       display: flex;
       background-size: 80%;
       background-position-x: center;
