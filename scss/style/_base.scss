@@ -57,11 +57,11 @@ main {
   justify-content: center;
 }
 
-section {
-  @media (min-width: $sm) {
-    margin-bottom: 3rem;
-  }
-}
+// section {
+//   @media (min-width: $sm) {
+//     margin-bottom: 3rem;
+//   }
+// }
 
 ul {
   @media (max-width: $sm) {
@@ -161,8 +161,12 @@ footer {
     padding: 0 6.2rem;
   }
 
-  @media (max-width: $md) and (min-width: $xs) {
-    padding: 0 3.6rem;
+  @media (max-width: 574px) and (min-width: $xs) {
+    padding: 0 2.6rem;
+  }
+
+  @media (max-width: 767px) and (min-width: $sm) {
+    padding: 0px 3.2rem;
   }
 }
 
