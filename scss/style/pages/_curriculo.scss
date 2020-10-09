@@ -4,6 +4,10 @@
     margin: 0 auto;
 
     padding-bottom: 14rem;
+
+    @media (min-width: $xs-iphone) {
+      width: 92%;
+    }
     @media (min-width: $md) {
       width: 68%;
     }
@@ -38,7 +42,7 @@
         width: 100%;
       }
 
-      @media (min-width: $lg) {
+      @media (min-width: $xl) {
         width: 50%;
       }
     }
@@ -71,14 +75,28 @@
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
     @media (max-width: $xs) {
-      min-height: 720px;
+      min-height: 684px;
     }
 
     @media (min-width: $sm) {
-      min-height: 760px;
+      min-height: 656px;
     }
     @media (min-width: $md) {
+      background-size: auto;
+      min-height: 828px;
+    }
+
+    @media (min-width: $lg) {
+      min-height: 828px;
+    }
+
+    @media (min-width: $xl) {
+      min-height: 20vh;
       background-size: contain;
+      background-position-x: right;
+    }
+    @media (min-width: $fhd) {
+      width: 48vw;
     }
   }
 

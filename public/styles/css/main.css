@@ -188,7 +188,7 @@ li {
   justify-content: space-between;
   flex-flow: wrap;
   padding: 0; }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     .card-list {
       justify-content: center; } }
   .card-list li {
@@ -207,6 +207,9 @@ li {
     border-radius: 12px;
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.9);
     padding: 1rem; }
+    @media (min-width: 576px) {
+      .card-list__shape {
+        width: 400px; } }
     .card-list__shape::before {
       /* transform: scaleX(-1); */
       content: '';
@@ -214,7 +217,7 @@ li {
       flex-direction: column;
       height: 350px;
       width: 344px;
-      background-size: 316px;
+      background-size: calc(100% - 1.6em);
       background-position-y: center;
       background-blend-mode: multiply;
       background-repeat: no-repeat;
@@ -222,9 +225,12 @@ li {
       background-image: url(../../assets/fahionista-project-portfolio.gif);
       border-radius: 12px 60px 12px;
       box-shadow: 0 16px 12px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
-      @media (max-width: 576px) {
+      @media (max-width: 412px) {
         .card-list__shape::before {
           width: 326px; } }
+      @media (min-width: 576px) {
+        .card-list__shape::before {
+          width: 410px; } }
     .card-list__shape:hover {
       box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
       color: #6f6f6f; }
@@ -288,6 +294,9 @@ li {
   max-width: 960px;
   margin: 0 auto;
   padding-bottom: 14rem; }
+  @media (min-width: 375px) {
+    .curriculum main {
+      width: 92%; } }
   @media (min-width: 768px) {
     .curriculum main {
       width: 68%; } }
@@ -311,7 +320,7 @@ li {
   @media (max-width: 576px) {
     .curriculum .bullet-number p {
       width: 100%; } }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .curriculum .bullet-number p {
       width: 50%; } }
   .curriculum .bullet-number span {
@@ -335,13 +344,25 @@ li {
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
   @media (max-width: 412px) {
     .curriculum .container-about {
-      min-height: 720px; } }
+      min-height: 684px; } }
   @media (min-width: 576px) {
     .curriculum .container-about {
-      min-height: 760px; } }
+      min-height: 656px; } }
   @media (min-width: 768px) {
     .curriculum .container-about {
-      background-size: contain; } }
+      background-size: auto;
+      min-height: 828px; } }
+  @media (min-width: 992px) {
+    .curriculum .container-about {
+      min-height: 828px; } }
+  @media (min-width: 1200px) {
+    .curriculum .container-about {
+      min-height: 20vh;
+      background-size: contain;
+      background-position-x: right; } }
+  @media (min-width: 1920px) {
+    .curriculum .container-about {
+      width: 48vw; } }
 
 .curriculum .container-career h3 {
   margin: 0; }
