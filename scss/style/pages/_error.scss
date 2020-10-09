@@ -6,13 +6,20 @@
   background: url('../../assets/Scout.png') no-repeat;
   background-size: contain;
   height: 58vh;
-  color: $error;
+  color: inherit;
   text-align: -webkit-center;
 
   @media (min-width: $lg) {
     flex-direction: column-reverse;
     height: 100vh;
     text-align: inherit;
+  }
+
+  section {
+    @media (min-width: $fhd) {
+      align-self: baseline;
+      padding: 1rem 16rem;
+    }
   }
 
   h1 {
@@ -36,5 +43,6 @@
 
   a {
     @extend .hover-animation;
+    color: inherit;
   }
 }

@@ -223,6 +223,10 @@ body {
     width: 1px;
     background-color: #fc5aff;
 
+    @media (max-width: $xs) {
+      height: 48%;
+    }
+
     @media (min-width: $md) {
       bottom: 27%;
       margin-left: 6%;

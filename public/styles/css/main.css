@@ -541,6 +541,9 @@ body {
     height: 54%;
     width: 1px;
     background-color: #fc5aff; }
+    @media (max-width: 412px) {
+      .rw-wrapper:after {
+        height: 48%; } }
     @media (min-width: 768px) {
       .rw-wrapper:after {
         bottom: 27%;
@@ -667,13 +670,17 @@ body {
   background: url("../../assets/Scout.png") no-repeat;
   background-size: contain;
   height: 58vh;
-  color: #263e4b;
+  color: inherit;
   text-align: -webkit-center; }
   @media (min-width: 992px) {
     .error {
       flex-direction: column-reverse;
       height: 100vh;
       text-align: inherit; } }
+  @media (min-width: 1920px) {
+    .error section {
+      align-self: baseline;
+      padding: 1rem 16rem; } }
   @media (min-width: 992px) {
     .error h1 {
       font-size: 1.5rem; } }
@@ -684,3 +691,5 @@ body {
         font-size: 1.125rem;
         line-height: 150%;
         width: 42%; } }
+  .error a {
+    color: inherit; }
