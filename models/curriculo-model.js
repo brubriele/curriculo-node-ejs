@@ -3,22 +3,64 @@ const data = {
   name: 'Bruna G. Paula',
   profession: 'Desenvolvedora de Software',
   description:
-    'Compartilhar, renovar e agregar conhecimentos, desenvolvimento de novas tecnologias voltadas à iniciativas de impacto social e cultural. Sociológa de formação e entusiasta de iniciativas que visam incrementar a equidade entre gêneros e inclusão de mulheres em TI, participei de formações pela Programaria, PyLadies e Laboratoria',
+    'Gosto de compartilhar, renovar e agregar conhecimentos, com muito interesse no desenvolvimento de novas tecnologias voltadas à iniciativas de impacto social e cultural. Sociológa de formação e entusiasta de iniciativas que visam incrementar a equidade entre gêneros e inclusão de mulheres em TI, participei de formações em formato de bootcamp pelo Programaria, PyLadies e Laboratoria',
   experience: [
     {
       company: 'Gauge',
       office: 'Analista Adobe AEM | Front-end',
       description:
-        'Desenvolvimento em front-end voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL, HTML, Less, JavaScript e React JS.',
+        'Atuação em projetos com foco em desenvolvimento front-end voltado a criação, manutenção e melhoria de componentes em formato em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL Expression Language, Less, JavaScript e React JS.',
       firstHighlight: 'Adobe AEM 6.5',
-      scndHighlight: 'JavaScript',
+      scndHighlight: 'JavaScript/jQuery',
       thirdHighlight: 'React',
     },
     {
       company: 'everis',
       office: 'Solutions Assistant | Front-end',
       description:
-        'Desenvolvimento em front-end voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.4, utilizando HTL, HTML, SCSS, JavaScript, com foco em acessibilidade e normas WCAG.',
+        'Desenvolvimento em front-end voltado a construção e manutenção de componentes exclusivamente para os portais web Itaú em formato CMS a partir da suíte Adobe Experience Manager (AEM), versão 6.4, utilizando HTL, HTML, SCSS, JavaScript, com foco em acessibilidade e normas WCAG.',
+      firstHighlight: 'Adobe AEM 6.4',
+      scndHighlight: 'JavaScript/jQuery',
+      thirdHighlight: 'Web Accessibility',
+    },
+    {
+      company: 'Instituto de Pesquisas Datafolha ',
+      office: 'Checagem de dados',
+      description:
+        'Verificação de questionários de opinião e roteiros de pesquisa, coleta e codificação de informações em amostras, tabulação de dados, desenvolvimento de planilhas estruturadas, formulários e rotinas em MS Office excel VBA e Virtual Fox Pro. Apuração e dechecagem de campo através de escuta e vídeo.',
+      firstHighlight: 'Excel VBA',
+      scndHighlight: 'Visual FoxPro',
+      thirdHighlight: 'data-centric procedural programming',
+    },
+  ],
+
+  education: [
+    {
+      company: 'Gauge',
+      office: 'Analista Adobe AEM | Front-end',
+      description:
+        'Atuação em projetos com foco em desenvolvimento front-end voltado a criação, manutenção e melhoria de componentes em formato em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL Expression Language, Less, JavaScript e React JS.',
+      firstHighlight: 'Adobe AEM 6.5',
+      scndHighlight: 'JavaScript/jQuery',
+      thirdHighlight: 'React',
+    },
+    {
+      company: 'everis',
+      office: 'Solutions Assistant | Front-end',
+      description:
+        'Desenvolvimento em front-end voltado a construção e manutenção de componentes exclusivamente para os portais web Itaú em formato CMS a partir da suíte Adobe Experience Manager (AEM), versão 6.4, utilizando HTL, HTML, SCSS, JavaScript, com foco em acessibilidade e normas WCAG.',
+      firstHighlight: 'Adobe AEM 6.4',
+      scndHighlight: 'JavaScript/jQuery',
+      thirdHighlight: 'Web Accessibility',
+    },
+    {
+      company: 'Instituto de Pesquisas Datafolha ',
+      office: 'Checagem de dados',
+      description:
+        'Verificação de questionários de opinião e roteiros de pesquisa, coleta e codificação de informações em amostras, tabulação de dados, desenvolvimento de planilhas estruturadas, formulários e rotinas em MS Office excel VBA e Virtual Fox Pro. Apuração e dechecagem de campo através de escuta e vídeo.',
+      firstHighlight: 'Excel VBA',
+      scndHighlight: 'Visual FoxPro',
+      thirdHighlight: 'data-centric procedural programming',
     },
   ],
 
