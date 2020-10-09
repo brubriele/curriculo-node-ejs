@@ -8,6 +8,12 @@ body {
   color: #d6d3c8;
   width: 100vw;
   height: 100vh;
+
+  .container {
+    @media (min-width: $md) {
+      grid-template-rows: 20% 60% 20%;
+    }
+  }
 }
 
 /*Início das configurações da header*/
@@ -80,7 +86,7 @@ body {
     li {
       height: 44px;
 
-      @media screen and (min-width: $sm) {
+      @media screen and (min-width: $md) {
         width: 32%;
       }
     }
@@ -202,6 +208,31 @@ body {
   display: flex;
   flex-direction: column;
 
+  // @media only screen and (min-width: 720px) {
+  //   .menu-item.menu-item--with-v-divider {
+  //     position: relative;
+  //     margin-right: 50px;
+  //   }
+
+  &:after {
+    content: '';
+    margin-left: 1%;
+    display: initial;
+    position: absolute;
+    height: 54%;
+    width: 1px;
+    background-color: #fc5aff;
+
+    @media (min-width: $md) {
+      bottom: 27%;
+      margin-left: 6%;
+    }
+
+    @media (min-width: $fhd) {
+      margin-left: 5%;
+    }
+  }
+
   @media (max-width: $sm) {
     margin: 20px auto 0 6%;
   }
@@ -221,16 +252,24 @@ body {
       width: 100%;
     }
 
-    @media (min-width: $sm) {
-      position: relative;
-      width: 30%;
-      right: 29%;
-      bottom: 68%;
-    }
-    @media (max-width: $md) and (min-width: $xs) {
-      width: 53%;
-      right: 17%;
-      bottom: 32%;
+    // @media (min-width: $sm) {
+    //   position: relative;
+    //   width: 30%;
+    //   right: 29%;
+    //   bottom: 68%;
+    // }
+    // @media (max-width: $md) and (min-width: $xs) {
+    //   width: 53%;
+    //   right: 17%;
+    //   bottom: 32%;
+    // }
+
+    @media (max-width: 767px) and (min-width: $sm) {
+      // border: solid 0.8px red;
+
+      //   width: 76%;
+      // right: 11%;
+      // bottom: calc(100% - 9em);
     }
   }
 
@@ -304,6 +343,10 @@ body {
     &:nth-child(6) {
       -webkit-animation-delay: 20s;
       animation-delay: 20s;
+
+      @media (max-width: $xs) {
+        font-size: $f24;
+      }
     }
 
     span {

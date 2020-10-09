@@ -4,7 +4,7 @@
   flex-flow: wrap;
   padding: 0;
 
-  @media (max-width: $sm) {
+  @media (max-width: $lg) {
     justify-content: center;
   }
 
@@ -46,6 +46,10 @@
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.9);
     padding: 1rem;
 
+    @media (min-width: $sm) {
+      width: 400px;
+    }
+
     &::before {
       /* transform: scaleX(-1); */
       content: '';
@@ -53,7 +57,7 @@
       flex-direction: column;
       height: 350px;
       width: 344px;
-      background-size: 316px;
+      background-size: calc(100% - 1.6em);
       // background-position-y: ;
       background-position-y: center;
       background-blend-mode: multiply;
@@ -65,8 +69,12 @@
       box-shadow: 0 16px 12px -12px rgba(0, 0, 0, 0.56),
         0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-      @media (max-width: $sm) {
+      @media (max-width: $xs) {
         width: 326px;
+      }
+
+      @media (min-width: $sm) {
+        width: 410px;
       }
     }
 
