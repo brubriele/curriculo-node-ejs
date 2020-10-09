@@ -86,7 +86,7 @@ body {
     li {
       height: 44px;
 
-      @media screen and (min-width: $sm) {
+      @media screen and (min-width: $md) {
         width: 32%;
       }
     }
@@ -343,6 +343,10 @@ body {
     &:nth-child(6) {
       -webkit-animation-delay: 20s;
       animation-delay: 20s;
+
+      @media (max-width: $xs) {
+        font-size: $f24;
+      }
     }
 
     span {
