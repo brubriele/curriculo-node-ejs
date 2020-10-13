@@ -117,7 +117,29 @@
 
         <div class="tabs">
 
-          <div class="tab">
+
+          <ul role="radiogroup" id="<%= extension.id %>">
+            <% extension.map(extension => { %>
+            <li>
+
+              <div class="tab">
+                <input role="radio" type="radio" id="<%= extension.id %>" name="tab-group-1" checked>
+                <label for="<%= extension.id %>" tabindex="0">Tab One</label>
+
+                <div class="content">
+                  <strong><%= extension.institution %></strong>
+                  <br>
+                  <span><%= extension.description %></span>
+                  <br>
+                  <span><%= extension.period %></span>
+                </div>
+              </div>
+
+            </li>
+            <% }); %>
+          </ul>
+
+          <!-- <div class="tab">
             <input type="radio" id="tab-1" name="tab-group-1" checked>
             <label for="tab-1">Tab One</label>
 
@@ -142,7 +164,7 @@
             <div class="content">
               stuff
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
