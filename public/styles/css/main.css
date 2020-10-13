@@ -52,7 +52,7 @@
   line-height: 1.5rem;
   font-size: 1rem; }
 
-.typo-14, .description-footer p:first-child {
+.typo-14, .description-footer p:first-child, .curriculum .container-career .highlight mark {
   line-height: 1.3125rem;
   font-size: 0.875rem; }
 
@@ -290,6 +290,45 @@ li {
   box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px); }
 
+.tabs {
+  position: relative;
+  min-height: 200px;
+  /* This part sucks */
+  clear: both;
+  margin: 25px 0; }
+
+.tab {
+  float: left; }
+
+.tab label {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px; }
+
+.tab [type='radio'] {
+  display: none; }
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; }
+
+[type='radio']:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2; }
+
+[type='radio']:checked ~ label ~ .content {
+  z-index: 1; }
+
 .curriculum main {
   max-width: 960px;
   margin: 0 auto;
@@ -344,10 +383,10 @@ li {
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
   @media (max-width: 412px) {
     .curriculum .container-about {
-      min-height: 684px; } }
+      min-height: 720px; } }
   @media (min-width: 576px) {
     .curriculum .container-about {
-      min-height: 656px; } }
+      min-height: 708px; } }
   @media (min-width: 768px) {
     .curriculum .container-about {
       background-size: auto;
@@ -374,6 +413,31 @@ li {
   padding: 0 0.1rem;
   font-weight: bolder;
   opacity: 0.8; }
+  @media (max-width: 412px) {
+    .curriculum .container-career .highlight mark {
+      font-size: 0.75rem; } }
+
+.curriculum .container-portfolio {
+  margin-top: 4rem; }
+
+.curriculum .container-education {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80vh; }
+  @media (max-width: 768px) {
+    .curriculum .container-education {
+      flex-direction: column;
+      min-height: 80vh; } }
+  .curriculum .container-education .description-area ul > li {
+    margin-bottom: 2rem; }
+    @media (max-width: 768px) {
+      .curriculum .container-education .description-area ul > li {
+        width: 72vw; } }
+  @media (max-width: 768px) {
+    .curriculum .container-education .description-area {
+      height: 20vh; } }
+  .curriculum .container-education .description-area__extension {
+    width: 30vw; }
 
 .curriculum .description-area ul {
   padding: 0; }
@@ -543,7 +607,7 @@ body {
     background-color: #fc5aff; }
     @media (max-width: 412px) {
       .rw-wrapper:after {
-        height: 48%; } }
+        height: 42%; } }
     @media (min-width: 768px) {
       .rw-wrapper:after {
         bottom: 27%;
