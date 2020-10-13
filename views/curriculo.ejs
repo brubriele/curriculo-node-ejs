@@ -86,7 +86,7 @@
         </div>
 
         <!-- 
-        <div class="container-education__timeline">
+        <div class="extension-timeline">
 
           <div class="content">
             <nav>
@@ -115,18 +115,18 @@
           </div>
         </div> -->
 
-        <div class="tabs">
+        <div class="extension-timeline">
 
 
           <ul role="radiogroup" id="<%= extension.id %>">
             <% extension.map(extension => { %>
             <li>
 
-              <div class="tab">
+              <div class="extension-timeline__tab">
                 <input role="radio" type="radio" id="<%= extension.id %>" name="tab-group-1" checked>
-                <label for="<%= extension.id %>" tabindex="0">Tab One</label>
+                <label arial-label="curso" for="<%= extension.id %>" tabindex="0"><%= extension.shortNameExtension %> <div class="divider"></div> </label>
 
-                <div class="content">
+                <div class="extension-timeline__content">
                   <strong><%= extension.institution %></strong>
                   <br>
                   <span><%= extension.description %></span>

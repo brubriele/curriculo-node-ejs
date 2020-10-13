@@ -54,12 +54,15 @@ const data = {
     {
       institution: 'Codenation',
       description: 'React JS | AceleraDev React Women',
+      shortNameExtension: 'Codenation',
       id: 'one',
     },
     {
       institution:
         'Instituto de Matemática e Estatística - Universidade de São Paulo (IME-USP)',
       description: 'Análise Exploratória de Dados e Métodos Estatísticos',
+      shortNameExtension: 'IME/USP',
+
       id: 'two',
     },
   ],
