@@ -148,11 +148,26 @@
         }
       }
       @media (max-width: $md) {
-        height: 20vh;
+        // height: 20vh;
+        height: 64vh;
       }
 
       &__extension {
         width: 30vw;
+        height: 32vh;
+
+        .extension-timeline {
+          @media (max-width: $md) {
+            height: 26vh;
+            width: 78vw;
+          }
+
+          ul {
+            @media (max-width: $md) {
+              overflow-x: scroll;
+            }
+          }
+        }
       }
     }
 

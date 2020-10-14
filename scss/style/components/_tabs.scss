@@ -11,7 +11,69 @@
     font-weight: 900;
 
     .divider {
-      background-color: green;
+      color: #4cbb5f;
+
+      -webkit-animation: shake-horizontal 5s
+        cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+      animation: shake-horizontal 5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        infinite both;
+
+      @-webkit-keyframes shake-horizontal {
+        0%,
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+          -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60% {
+          -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        80% {
+          -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+        }
+        90% {
+          -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+        }
+      }
+      @keyframes shake-horizontal {
+        0%,
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+          -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60% {
+          -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+        }
+        80% {
+          -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+        }
+        90% {
+          -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+        }
+      }
     }
   }
   [type='radio']:checked ~ label ~ .extension-timeline__content {
@@ -24,9 +86,9 @@
   }
 
   .divider {
-    width: 4rem;
-    height: 1px;
-    background-color: #d6d3c8;
+    width: 2rem;
+    /* height: 1px; */
+    /* background-color: #d6d3c8; */
     margin: 0 1rem;
     vertical-align: middle;
   }

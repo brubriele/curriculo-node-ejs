@@ -84,37 +84,6 @@
         <div class="bullet-number">
           <h2>03.2<span>_</span><span>Cursos </span></h2>
         </div>
-
-        <!-- 
-        <div class="extension-timeline">
-
-          <div class="content">
-            <nav>
-              <a href="#one">Codenation</a>
-              <a href="#two">IME</a>
-            </nav>
-
-            <section data-aos="fade-up">
-              <ul id="<%= extension.id %>">
-                <% extension.map(extension => { %>
-                <li>
-                  <div>
-                    <strong><%= extension.institution %></strong>
-                    <br>
-                    <span><%= extension.description %></span>
-                    <br>
-                    <span><%= extension.period %></span>
-                  </div>
-                </li>
-                <% }); %>
-              </ul>
-
-            </section>
-
-
-          </div>
-        </div> -->
-
         <div class="extension-timeline">
 
 
@@ -124,7 +93,7 @@
 
               <div class="extension-timeline__tab">
                 <input role="radio" type="radio" id="<%= extension.id %>" name="tab-group-1" checked>
-                <label arial-label="curso" for="<%= extension.id %>" tabindex="0"><%= extension.shortNameExtension %> <div class="divider"></div> </label>
+                <label arial-label="curso" for="<%= extension.id %>" tabindex="0"><%= extension.shortNameExtension %> <div class="divider"><i class="fas fa-chevron-right"></i></div> </label>
 
                 <div class="extension-timeline__content">
                   <strong><%= extension.institution %></strong>

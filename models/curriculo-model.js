@@ -65,6 +65,20 @@ const data = {
 
       id: 'two',
     },
+    {
+      institution: 'Impacta Tecnologia',
+      description: 'SQL 2016',
+      shortNameExtension: 'Impacta',
+
+      id: 'three',
+    },
+    {
+      institution: 'Excel com VBA',
+      description: 'Senac São Paulo',
+      shortNameExtension: 'Senac',
+
+      id: 'four',
+    },
   ],
 
   projects: [
