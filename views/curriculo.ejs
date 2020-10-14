@@ -42,58 +42,29 @@
         </div>
         <ul>
           <% experience.map(experience => { %>
-          <li>
+          <li data-aos="fade-up">
             <div>
               <h3><%= experience.company %> | <%= experience.office %></h3>
               <br>
               <span><%= experience.description %></span>
             </div>
-            <p class="highlight">
-              <mark><%= experience.firstHighlight %></mark>
-              <mark><%= experience.scndHighlight %></mark>
-              <mark><%= experience.thirdHighlight %></mark>
-            </p>
-
-          </li>
-          <% }); %>
-        </ul>
-        <ul>
-          <% education.map(education => { %>
-          <li>
-            <div>
-              <strong><%= education.institution %></strong>
-              <br>
-              <span><%= education.description %></span>
+            <div class="highlight">
+              <p aria-label="Primeira principal skill"><%= experience.firstHighlight %></p>
+              <p aria-label="Segunda principal skill"><%= experience.scndHighlight %></p>
+              <p aria-label="Terceira principal skill"><%= experience.thirdHighlight %></p>
             </div>
+
           </li>
           <% }); %>
         </ul>
-        <ul>
-          <% skills.map(skill => { %>
-          <li><%= skill %></li>
-          <% }); %>
-        </ul>
-
       </div>
     </section>
 
-    <section data-aos="fade-up" class="container-career">
+    <section data-aos="fade-up" class="container-education">
       <div class="description-area">
         <div class="bullet-number">
-          <h2>02<span>_</span><span>Carreira </span></h2>
+          <h2>03.1<span>_</span><span>Formação </span></h2>
         </div>
-        <ul>
-          <% experience.map(experience => { %>
-          <li>
-            <div>
-              <strong><%= experience.company %>:</strong>
-              <strong><%= experience.office %></strong>
-              <br>
-              <span><%= experience.description %></span>
-            </div>
-          </li>
-          <% }); %>
-        </ul>
         <ul>
           <% education.map(education => { %>
           <li>
@@ -101,23 +72,81 @@
               <strong><%= education.institution %></strong>
               <br>
               <span><%= education.description %></span>
+              <br>
+              <span><%= education.period %></span>
             </div>
           </li>
           <% }); %>
         </ul>
-        <ul>
-          <% skills.map(skill => { %>
-          <li><%= skill %></li>
-          <% }); %>
-        </ul>
-
       </div>
+
+      <div class="description-area__extension">
+        <div class="bullet-number">
+          <h2>03.2<span>_</span><span>Cursos </span></h2>
+        </div>
+        <div class="extension-timeline">
+
+
+          <ul role="radiogroup" id="<%= extension.id %>">
+            <% extension.map(extension => { %>
+            <li>
+
+              <div class="extension-timeline__tab">
+                <input role="radio" type="radio" id="<%= extension.id %>" name="tab-group-1" checked>
+                <label arial-label="curso" for="<%= extension.id %>" tabindex="0"><%= extension.shortNameExtension %> <div class="divider"><i class="fas fa-chevron-right"></i></div> </label>
+
+                <div class="extension-timeline__content">
+                  <strong><%= extension.institution %></strong>
+                  <br>
+                  <span><%= extension.description %></span>
+                  <br>
+                  <span><%= extension.period %></span>
+                </div>
+              </div>
+
+            </li>
+            <% }); %>
+          </ul>
+
+          <!-- <div class="tab">
+            <input type="radio" id="tab-1" name="tab-group-1" checked>
+            <label for="tab-1">Tab One</label>
+
+            <div class="content">
+              stuff
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="tab-2" name="tab-group-1">
+            <label for="tab-2">Tab Two</label>
+
+            <div class="content">
+              stuff
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="radio" id="tab-3" name="tab-group-1">
+            <label for="tab-3">Tab Three</label>
+
+            <div class="content">
+              stuff
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+
+
+
     </section>
 
     <section id="porftolio" class="container-portfolio">
       <div class="description-area">
         <div class="bullet-number">
-          <h2>03<span>_</span><span>Projetos </span></h2>
+          <h2>04<span>_</span><span>Projetos </span></h2>
         </div>
 
       </div>
@@ -133,17 +162,14 @@
                 <a target="_blank" href="<%= projects.repository %>"><i title="Link para o projeto" class="fas fa-external-link-alt"></i></a>
                 <a target="_blank" href="<%= projects.repository %>"><i title="Repositório do projeto no Github" class="fas fa-code-branch "></i></i></a>
               </div>
-
-
-
-
-
-
               <div class="card-list__shape--stack">
                 <span>Stack:</span>
                 <i class="<%= projects.stack1 ? projects.stack1 : 'hidden-item'%>"></i>
+                <span class="sr-only"><%= projects.stackAria1 %></span>
                 | <i class="<%= projects.stack2 ? projects.stack2 : 'hidden-item'%>"></i>
+                <span class="sr-only"><%= projects.stackAria2 %></span>
                 | <i class="<%= projects.stack3 ? projects.stack3 : 'hidden-item' %>">|</i>
+                <span class="sr-only"><%= projects.stackAria3 %></span>
               </div>
             </div>
 

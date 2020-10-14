@@ -75,11 +75,11 @@
     animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
     @media (max-width: $xs) {
-      min-height: 684px;
+      min-height: 720px;
     }
 
     @media (min-width: $sm) {
-      min-height: 656px;
+      min-height: 708px;
     }
     @media (min-width: $md) {
       background-size: auto;
@@ -112,11 +112,87 @@
 
     .highlight {
       mark {
+        @extend .typo-14;
         padding: 0 0.1rem;
         font-weight: bolder;
         opacity: 0.8;
+
+        @media (max-width: $xs) {
+          font-size: $f12;
+        }
       }
     }
+  }
+  .container-portfolio {
+    margin-top: 4rem;
+  }
+
+  .container-education {
+    display: flex;
+    justify-content: space-between;
+    // max-height: 36vh;
+    min-height: 80vh;
+    // margin-right: 6rem;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+      min-height: 80vh;
+
+      // min-height: 48vh;
+    }
+    .description-area {
+      ul > li {
+        margin-bottom: 2rem;
+        @media (max-width: $md) {
+          width: 72vw;
+        }
+      }
+      @media (max-width: $md) {
+        // height: 20vh;
+        height: 64vh;
+      }
+
+      &__extension {
+        width: 30vw;
+        height: 32vh;
+
+        .extension-timeline {
+          @media (max-width: $md) {
+            height: 26vh;
+            width: 78vw;
+          }
+
+          ul {
+            @media (max-width: $md) {
+              overflow-x: scroll;
+            }
+          }
+        }
+      }
+    }
+
+    // &__timeline {
+    //   .content {
+    //     section {
+    //       ul {
+    //         display: none;
+    //         overflow: hidden;
+    //         &:target {
+    //           // animation: highlight 1s ease;
+    //           // transform: translateX(20px);
+    //           display: block;
+    //         }
+    //         section > ul {
+    //           border-left: 40px solid white;
+    //           // padding: 10px;
+    //           transition: all 0.5s ease;
+    //           // padding-right: 50px;
+    //           // margin-left: -20px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 
   .description-area {

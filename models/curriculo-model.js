@@ -3,13 +3,14 @@ const data = {
   name: 'Bruna G. Paula',
   profession: 'Desenvolvedora de Software',
   description:
-    'Gosto de compartilhar, renovar e agregar conhecimentos, com muito interesse no desenvolvimento de novas tecnologias voltadas à iniciativas de impacto social e cultural. Sociológa de formação e entusiasta de iniciativas que visam incrementar a equidade entre gêneros e inclusão de mulheres em TI, participei de formações em formato de bootcamp pelo Programaria, PyLadies e Laboratoria',
+    'Gosto de compartilhar, renovar e agregar conhecimentos, com muito interesse no desenvolvimento de novas tecnologias voltadas à iniciativas de impacto social e cultural. Sociológa de formação e entusiasta de iniciativas que visam incrementar a equidade entre gêneros e inclusão de mulheres em TI, sou formada pelos bootcamps Programaria, PyLadies e Laboratoria',
   experience: [
     {
       company: 'Gauge',
       office: 'Analista Adobe AEM | Front-end',
+      period: 'Remoto | Jul 2020 – atual',
       description:
-        'Atuação em projetos com foco em desenvolvimento front-end voltado a criação, manutenção e melhoria de componentes em formato em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL Expression Language, Less, JavaScript e React JS.',
+        'Atuação em projetos com foco em desenvolvimento front-end voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL Expression Language, Less, JavaScript e React JS.',
       firstHighlight: 'Adobe AEM 6.5',
       scndHighlight: 'JavaScript/jQuery',
       thirdHighlight: 'React',
@@ -17,6 +18,7 @@ const data = {
     {
       company: 'everis',
       office: 'Solutions Assistant | Front-end',
+      period: 'São Paulo | Ago 2019 – Ago 2020',
       description:
         'Desenvolvimento em front-end voltado a construção e manutenção de componentes exclusivamente para os portais web Itaú em formato CMS a partir da suíte Adobe Experience Manager (AEM), versão 6.4, utilizando HTL, HTML, SCSS, JavaScript, com foco em acessibilidade e normas WCAG.',
       firstHighlight: 'Adobe AEM 6.4',
@@ -26,6 +28,7 @@ const data = {
     {
       company: 'Instituto de Pesquisas Datafolha ',
       office: 'Checagem de dados',
+      period: 'São Paulo | Nov 2016 – Jan 2019',
       description:
         'Verificação de questionários de opinião e roteiros de pesquisa, coleta e codificação de informações em amostras, tabulação de dados, desenvolvimento de planilhas estruturadas, formulários e rotinas em MS Office excel VBA e Virtual Fox Pro. Apuração e dechecagem de campo através de escuta e vídeo.',
       firstHighlight: 'Excel VBA',
@@ -36,31 +39,45 @@ const data = {
 
   education: [
     {
-      company: 'Gauge',
-      office: 'Analista Adobe AEM | Front-end',
-      description:
-        'Atuação em projetos com foco em desenvolvimento front-end voltado a criação, manutenção e melhoria de componentes em formato em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL Expression Language, Less, JavaScript e React JS.',
-      firstHighlight: 'Adobe AEM 6.5',
-      scndHighlight: 'JavaScript/jQuery',
-      thirdHighlight: 'React',
+      institution: 'Universidade Federal de São Paulo/EFLCH',
+      description: 'Ciências Sociais',
+      period: 'Garulhos, SP | 2009 - 2015',
     },
     {
-      company: 'everis',
-      office: 'Solutions Assistant | Front-end',
-      description:
-        'Desenvolvimento em front-end voltado a construção e manutenção de componentes exclusivamente para os portais web Itaú em formato CMS a partir da suíte Adobe Experience Manager (AEM), versão 6.4, utilizando HTL, HTML, SCSS, JavaScript, com foco em acessibilidade e normas WCAG.',
-      firstHighlight: 'Adobe AEM 6.4',
-      scndHighlight: 'JavaScript/jQuery',
-      thirdHighlight: 'Web Accessibility',
+      institution: 'Laboratoria',
+      description: 'Bootcamp Desenvolvimento Front-end UX/UI',
+      period: 'São Paulo, SP | Jan 2019 - Jul 2019',
+    },
+  ],
+
+  extension: [
+    {
+      institution: 'Codenation',
+      description: 'React JS | AceleraDev React Women',
+      shortNameExtension: 'Codenation',
+      id: 'one',
     },
     {
-      company: 'Instituto de Pesquisas Datafolha ',
-      office: 'Checagem de dados',
-      description:
-        'Verificação de questionários de opinião e roteiros de pesquisa, coleta e codificação de informações em amostras, tabulação de dados, desenvolvimento de planilhas estruturadas, formulários e rotinas em MS Office excel VBA e Virtual Fox Pro. Apuração e dechecagem de campo através de escuta e vídeo.',
-      firstHighlight: 'Excel VBA',
-      scndHighlight: 'Visual FoxPro',
-      thirdHighlight: 'data-centric procedural programming',
+      institution:
+        'Instituto de Matemática e Estatística - Universidade de São Paulo (IME-USP)',
+      description: 'Análise Exploratória de Dados e Métodos Estatísticos',
+      shortNameExtension: 'IME/USP',
+
+      id: 'two',
+    },
+    {
+      institution: 'Impacta Tecnologia',
+      description: 'SQL 2016',
+      shortNameExtension: 'Impacta',
+
+      id: 'three',
+    },
+    {
+      institution: 'Excel com VBA',
+      description: 'Senac São Paulo',
+      shortNameExtension: 'Senac',
+
+      id: 'four',
     },
   ],
 
@@ -71,8 +88,13 @@ const data = {
         'E-commerce de moda, o Fashionista, garantindo a melhor experiência possível para os usuários interagirem com os produtos.',
       repository: 'https://github.com/brubriele/aceleracao-react',
       stack1: 'fab fa-react',
+      stackAria1: 'React',
+
       stack2: 'fab fa-js-square',
+      stackAria2: 'JavaScript',
+
       stack3: 'fab fa-sass',
+      stackAria3: 'Sass',
       fade: 'fade-right',
     },
     {
@@ -81,8 +103,13 @@ const data = {
         'Desenvolvimento uma versão mobile first do Instagram utilizando apenas HTML5 e CSS3.',
       repository: 'https://brubriele.github.io/react-women-chal-2/public/',
       stack1: 'fab fa-html5',
+      stackAria1: 'HTML',
+
       stack2: 'fab fa-css3',
+      stackAria2: 'CSS3',
+
       stack3: 'fab fa-sass',
+      stackAria3: 'Sass',
       fade: 'fade-left',
     },
     {
@@ -91,7 +118,11 @@ const data = {
         'Biblioteca de transposição de escalas Maior, Menor, Pentatônica, Pentatônica Maior, Menor Melódica, Menor Harmônica, Menor de Blues em diferentes tonalidades.',
       repository: 'https://github.com/brubriele/lib-scale-chord-convert',
       stack1: 'fab fa-npm',
+      stackAria1: 'NPM',
+
       stack2: 'fab fa-js-square',
+      stackAria2: 'JavaScript',
+
       fade: 'fade-right',
     },
 
@@ -101,19 +132,15 @@ const data = {
         'Aplicativo Web responsivo da Rede de Apoio nas e das Periferias (RAH), uma iniciativa dos movimentos negros e periféricos do munícipio de São Paulo. ',
       repository: 'https://github.com/brubriele/GT-WEB-RAH',
       stack1: 'fab fa-react',
+      stackAria1: 'React',
+
       stack2: 'fab fa-js-square',
+      stackAria2: 'JavaScript',
+
       stack3: 'fab fa-sass',
+      stackAria3: 'Sass',
+
       fade: 'fade-left',
-    },
-  ],
-  education: [
-    {
-      institution: 'Universidade Federal de São Paulo/EFLCH',
-      description: 'Ciências Sociais',
-    },
-    {
-      institution: 'Laboratoria',
-      description: 'Bootcamp Desenvolvimento Front-end UX/UI',
     },
   ],
   skills: ['frontend', 'acessibilidade web', 'cms'],
