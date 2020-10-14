@@ -354,6 +354,7 @@ li {
     z-index: 1; }
   .extension-timeline ul {
     display: flex;
+    flex-direction: row-reverse;
     padding: 0; }
   .extension-timeline .divider {
     width: 2rem;
