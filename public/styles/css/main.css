@@ -489,16 +489,14 @@ li {
   @media (max-width: 768px) {
     .curriculum .container-education .description-area {
       height: 64vh; } }
-  .curriculum .container-education .description-area__extension {
+  .curriculum .container-education .extension {
     width: 30vw;
     height: 32vh; }
-    @media (max-width: 768px) {
-      .curriculum .container-education .description-area__extension .extension-timeline {
-        height: 26vh;
-        width: 78vw; } }
-    @media (max-width: 768px) {
-      .curriculum .container-education .description-area__extension .extension-timeline ul {
-        overflow-x: scroll; } }
+    .curriculum .container-education .extension .extension-timeline .hydrated {
+      width: 100%; }
+    @media (max-width: 412px) {
+      .curriculum .container-education .extension .extension-timeline {
+        width: 87vw; } }
 
 .curriculum .description-area ul {
   padding: 0; }
