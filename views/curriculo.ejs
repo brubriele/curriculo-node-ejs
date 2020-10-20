@@ -14,6 +14,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/0999dad2cf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.21/dist/shoelace/shoelace.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.21/dist/shoelace/shoelace.esm.js"></script>
+
 </head>
 
 <body class="curriculum">
@@ -24,7 +27,7 @@
   </header>
 
   <main>
-    <section class="container-about">
+    <section tabindex="0" role="region" aria-label="Sobre meu perfil" class="container-about">
       <div class="description-area">
         <div class="bullet-number">
           <h2>01<span>_</span><span>Perfil </span></h2>
@@ -35,7 +38,7 @@
 
     </section>
 
-    <section data-aos="fade-up" class="container-career">
+    <section tabindex="0" role="region" aria-label="Destaques sobre carreira" data-aos="fade-up" class="container-career">
       <div class="description-area">
         <div class="bullet-number">
           <h2>02<span>_</span><span>Carreira </span></h2>
@@ -60,7 +63,7 @@
       </div>
     </section>
 
-    <section data-aos="fade-up" class="container-education">
+    <section tabindex="0" role="region" aria-label="Formação e cursos" data-aos="fade-up" class="container-education">
       <div class="description-area">
         <div class="bullet-number">
           <h2>03.1<span>_</span><span>Formação </span></h2>
@@ -84,56 +87,16 @@
         <div class="bullet-number">
           <h2>03.2<span>_</span><span>Cursos </span></h2>
         </div>
-        <div class="extension-timeline">
+        <div tabindex="0" role="region" aria-label="Cursos" class="extension-timeline">
 
 
-          <ul role="radiogroup" id="<%= extension.id %>">
+          <sl-tab-group>
             <% extension.map(extension => { %>
-            <li>
+            <sl-tab slot="nav" panel="<%= extension.id %>"><%= extension.shortNameExtension %></sl-tab>
 
-              <div class="extension-timeline__tab">
-                <input role="radio" type="radio" id="<%= extension.id %>" name="tab-group-1" checked>
-                <label arial-label="curso" for="<%= extension.id %>" tabindex="0"><%= extension.shortNameExtension %> <div class="divider"><i class="fas fa-chevron-right"></i></div> </label>
-
-                <div class="extension-timeline__content">
-                  <strong><%= extension.institution %></strong>
-                  <br>
-                  <span><%= extension.description %></span>
-                  <br>
-                  <span><%= extension.period %></span>
-                </div>
-              </div>
-
-            </li>
+            <sl-tab-panel tabindex="0" name="<%= extension.id %>"><%= extension.description %></sl-tab-panel>
             <% }); %>
-          </ul>
-
-          <!-- <div class="tab">
-            <input type="radio" id="tab-1" name="tab-group-1" checked>
-            <label for="tab-1">Tab One</label>
-
-            <div class="content">
-              stuff
-            </div>
-          </div>
-
-          <div class="tab">
-            <input type="radio" id="tab-2" name="tab-group-1">
-            <label for="tab-2">Tab Two</label>
-
-            <div class="content">
-              stuff
-            </div>
-          </div>
-
-          <div class="tab">
-            <input type="radio" id="tab-3" name="tab-group-1">
-            <label for="tab-3">Tab Three</label>
-
-            <div class="content">
-              stuff
-            </div>
-          </div> -->
+          </sl-tab-group>
 
         </div>
       </div>
@@ -143,7 +106,7 @@
 
     </section>
 
-    <section id="porftolio" class="container-portfolio">
+    <section tabindex="0" role="region" aria-label="Exemplos de projetos desenvolvidos" id="porftolio" class="container-portfolio">
       <div class="description-area">
         <div class="bullet-number">
           <h2>04<span>_</span><span>Projetos </span></h2>
@@ -182,7 +145,7 @@
     <p>Footer <span> /></span></p>
     <div class="description-footer">
 
-      <p>Desenvolvido com HTML, CSS, Javascript vanilla, Node.JS e EJS template. </p>
+      <p>Desenvolvido com HTML, CSS, Javascript, Node.JS e EJS template. </p>
       <p>Todos os direitos reservados.<br>Bruna G. Paula<br></p>
       <div class="icons-box">
         <a target="_blank" href="https://github.com/brubriele"><i class="fa fa-github-alt"></i></a>
