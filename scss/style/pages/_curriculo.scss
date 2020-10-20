@@ -65,8 +65,6 @@
 
   .container-about {
     background: url('../../assets/profile/bruna-perfil.png') no-repeat;
-    // background-size: contain;
-    // background-position-x: right;
     display: flex;
     background-size: 60%;
     background-position-x: center;
@@ -151,48 +149,20 @@
         // height: 20vh;
         height: 64vh;
       }
+    }
+    .extension {
+      width: 30vw;
+      height: 32vh;
 
-      &__extension {
-        width: 30vw;
-        height: 32vh;
-
-        .extension-timeline {
-          @media (max-width: $md) {
-            height: 26vh;
-            width: 78vw;
-          }
-
-          ul {
-            @media (max-width: $md) {
-              overflow-x: scroll;
-            }
-          }
+      .extension-timeline {
+        .hydrated {
+          width: 100%;
+        }
+        @media (max-width: $xs) {
+          width: 87vw;
         }
       }
     }
-
-    // &__timeline {
-    //   .content {
-    //     section {
-    //       ul {
-    //         display: none;
-    //         overflow: hidden;
-    //         &:target {
-    //           // animation: highlight 1s ease;
-    //           // transform: translateX(20px);
-    //           display: block;
-    //         }
-    //         section > ul {
-    //           border-left: 40px solid white;
-    //           // padding: 10px;
-    //           transition: all 0.5s ease;
-    //           // padding-right: 50px;
-    //           // margin-left: -20px;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
   }
 
   .description-area {
