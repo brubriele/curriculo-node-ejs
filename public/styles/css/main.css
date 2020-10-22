@@ -52,7 +52,7 @@
   line-height: 1.5rem;
   font-size: 1rem; }
 
-.typo-14, .description-footer p:first-child, .curriculum .container-career .highlight mark {
+.typo-14, .description-footer p:first-child, .curriculum .container-career .highlight p {
   line-height: 1.3125rem;
   font-size: 0.875rem; }
 
@@ -456,19 +456,32 @@ li {
     .curriculum .container-about {
       width: 48vw; } }
 
+@media (max-width: 412px) {
+  .curriculum .container-career {
+    height: 184vh; } }
+
 .curriculum .container-career h3 {
   margin: 0; }
 
 .curriculum .container-career ul li {
   margin-bottom: 3rem; }
 
-.curriculum .container-career .highlight mark {
-  padding: 0 0.1rem;
-  font-weight: bolder;
-  opacity: 0.8; }
+.curriculum .container-career .highlight {
+  display: flex; }
   @media (max-width: 412px) {
-    .curriculum .container-career .highlight mark {
-      font-size: 0.75rem; } }
+    .curriculum .container-career .highlight {
+      flex-direction: column; } }
+  .curriculum .container-career .highlight p {
+    padding: 0 0.1rem;
+    margin-right: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    background-image: linear-gradient(to right, #f27121cc, #e94057cc, #8a2387cc);
+    border-radius: 6px;
+    padding: 3px 6px; }
+    @media (max-width: 412px) {
+      .curriculum .container-career .highlight p {
+        font-size: 0.75rem; } }
 
 .curriculum .container-portfolio {
   margin-top: 4rem; }
@@ -476,11 +489,10 @@ li {
 .curriculum .container-education {
   display: flex;
   justify-content: space-between;
-  min-height: 80vh; }
+  min-height: 40vh; }
   @media (max-width: 768px) {
     .curriculum .container-education {
-      flex-direction: column;
-      min-height: 80vh; } }
+      flex-direction: column; } }
   .curriculum .container-education .description-area ul > li {
     margin-bottom: 2rem; }
     @media (max-width: 768px) {
@@ -488,7 +500,7 @@ li {
         width: 72vw; } }
   @media (max-width: 768px) {
     .curriculum .container-education .description-area {
-      height: 64vh; } }
+      height: 44vh; } }
   .curriculum .container-education .extension {
     width: 30vw;
     height: 32vh; }
@@ -496,7 +508,12 @@ li {
       width: 100%; }
     @media (max-width: 412px) {
       .curriculum .container-education .extension .extension-timeline {
-        width: 87vw; } }
+        position: relative;
+        right: 28%;
+        width: 92vw; } }
+    @media (max-width: 768px) and (min-width: 576px) {
+      .curriculum .container-education .extension .extension-timeline {
+        width: 70vw; } }
 
 .curriculum .description-area ul {
   padding: 0; }

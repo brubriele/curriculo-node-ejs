@@ -99,6 +99,9 @@
   }
 
   .container-career {
+    @media (max-width: $xs) {
+      height: 184vh;
+    }
     h3 {
       margin: 0;
     }
@@ -109,11 +112,25 @@
     }
 
     .highlight {
-      mark {
+      display: flex;
+
+      @media (max-width: $xs) {
+        flex-direction: column;
+      }
+      p {
         @extend .typo-14;
         padding: 0 0.1rem;
+        margin-right: 1rem;
         font-weight: bolder;
-        opacity: 0.8;
+        text-align: center;
+        background-image: linear-gradient(
+          to right,
+          #f27121cc,
+          #e94057cc,
+          #8a2387cc
+        );
+        border-radius: 6px;
+        padding: 3px 6px;
 
         @media (max-width: $xs) {
           font-size: $f12;
@@ -128,13 +145,12 @@
   .container-education {
     display: flex;
     justify-content: space-between;
-    // max-height: 36vh;
-    min-height: 80vh;
+    min-height: 40vh;
     // margin-right: 6rem;
 
     @media (max-width: $md) {
       flex-direction: column;
-      min-height: 80vh;
+      // min-height: 80vh;
 
       // min-height: 48vh;
     }
@@ -147,7 +163,7 @@
       }
       @media (max-width: $md) {
         // height: 20vh;
-        height: 64vh;
+        height: 44vh;
       }
     }
     .extension {
@@ -159,7 +175,13 @@
           width: 100%;
         }
         @media (max-width: $xs) {
-          width: 87vw;
+          position: relative;
+          right: 28%;
+          width: 92vw;
+        }
+
+        @media (max-width: $md) and (min-width: $sm) {
+          width: 70vw;
         }
       }
     }
