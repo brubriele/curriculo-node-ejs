@@ -456,10 +456,6 @@ li {
     .curriculum .container-about {
       width: 48vw; } }
 
-@media (max-width: 412px) {
-  .curriculum .container-career {
-    height: 184vh; } }
-
 .curriculum .container-career h3 {
   margin: 0; }
 
