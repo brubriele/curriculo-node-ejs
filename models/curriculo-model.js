@@ -52,32 +52,56 @@ const data = {
 
   extension: [
     {
-      institution: 'Codenation',
-      description: 'React JS | AceleraDev React Women',
-      shortNameExtension: 'Codenation',
+      institution: 'PyLadies',
+      title: 'Iniciação à lógica de programação com Python',
+      description:
+        'Oficina voltada à prática de programação usando o Python, apresentado conceitos básicos de forma bastante intuitiva e simples para o primeiro contato com a linguagem.',
+      shortNameExtension: 'PyLadies',
       id: 'one',
+    },
+    {
+      institution: 'Programaria',
+      title: 'Introdução ao Desenvolvimento Web',
+      description:
+        'Bootcamp de 4 semanas e voltado aos conceitos básicos de desenvolvimento web: HTML, CSS, JavaScript e Lógica de Programação.',
+      shortNameExtension: 'Programaria',
+      id: 'two',
+    },
+    {
+      institution: 'Codenation',
+      title: 'AceleraDev React Women',
+      description:
+        'Bootcamp com carga horária de 80 horas, voltado às tecnologias React, JS, Redux, Router, Componentização, Lifecycle, testes e outras tecnologias de ponta com foco em Frontend',
+      shortNameExtension: 'Codenation',
+      id: 'three',
     },
     {
       institution:
         'Instituto de Matemática e Estatística - Universidade de São Paulo (IME-USP)',
-      description: 'Análise Exploratória de Dados e Métodos Estatísticos',
+      title: 'Análise Exploratória de Dados e Métodos Estatísticos',
+      description:
+        'Curso voltado aos principais tópicos de Estatística: a Teoria de Probabilidades, variáveis aleatórias, distribuições de probabilidades, métodos de estimação e procedimentos inferenciais',
       shortNameExtension: 'IME/USP',
 
-      id: 'two',
+      id: 'four',
     },
     {
       institution: 'Impacta Tecnologia',
-      description: 'SQL 2016',
+      title: 'SQL 2016',
+      description:
+        'Treinamento voltado à criação, gerenciamento de sistemas de banco de dados em SQL Server e estruturas básicas de consulta e manipulação de dados.',
       shortNameExtension: 'Impacta',
 
-      id: 'three',
+      id: 'five',
     },
     {
-      institution: 'Excel com VBA',
-      description: 'Senac São Paulo',
+      institution: 'Senac São Paulo',
+      title: 'Excel com VBA',
+      description:
+        'Curso voltado ao desenvolvimento de macros, formulários e funções personalizadas utilizando recursos do Excel e do VBA, otimização do processamento, armazenamento e apresentação de informações em planilhas do Excel',
       shortNameExtension: 'Senac',
 
-      id: 'four',
+      id: 'six',
     },
   ],
 

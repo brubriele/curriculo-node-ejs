@@ -94,7 +94,9 @@
             <% extension.map(extension => { %>
             <sl-tab slot="nav" panel="<%= extension.id %>"><%= extension.shortNameExtension %></sl-tab>
 
-            <sl-tab-panel tabindex="0" name="<%= extension.id %>"><%= extension.description %></sl-tab-panel>
+            <sl-tab-panel tabindex="0" name="<%= extension.id %>">
+              <h4><%= extension.title %></h4><br><%= extension.description %>
+            </sl-tab-panel>
             <% }); %>
           </sl-tab-group>
 
