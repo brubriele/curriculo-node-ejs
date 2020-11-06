@@ -499,7 +499,7 @@ li {
       height: 62vh; } }
   .curriculum .container-education .extension {
     width: 30vw;
-    height: 32vh; }
+    min-height: 72vh; }
     .curriculum .container-education .extension .extension-timeline .hydrated {
       --sl-color-primary-50: #4cbb5f;
       width: 100%; }
