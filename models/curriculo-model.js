@@ -6,9 +6,19 @@ const data = {
     'Gosto de compartilhar, renovar e agregar conhecimentos, com muito interesse no desenvolvimento de novas tecnologias voltadas à iniciativas de impacto social e cultural. Sociológa de formação e entusiasta de iniciativas que visam incrementar a equidade entre gêneros e inclusão de mulheres em TI, sou formada pelos bootcamps Programaria, PyLadies e Laboratoria',
   experience: [
     {
+      company: 'Compasso UOL',
+      office: 'Analista Adobe AEM | Front-end',
+      period: 'Remoto | Dez 2020 – atual',
+      description:
+        'Desenvolvimento voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5 com HTL Expression Language, HTML, SCSS, Javascript, Jquery e Vue.js',
+      firstHighlight: 'Adobe AEM 6.5',
+      scndHighlight: 'JavaScript/jQuery',
+      thirdHighlight: 'Vue.js',
+    },
+    {
       company: 'Gauge',
       office: 'Analista Adobe AEM | Front-end',
-      period: 'Remoto | Jul 2020 – atual',
+      period: 'Remoto | Jul 2020 – Dez 2020',
       description:
         'Atuação em projetos com foco em desenvolvimento front-end voltado a criação, manutenção e melhoria de componentes em formato CMS pela suíte Adobe Experience Manager (AEM) 6.5, HTL Expression Language, Less, JavaScript e React JS.',
       firstHighlight: 'Adobe AEM 6.5',
