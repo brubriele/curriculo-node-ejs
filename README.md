@@ -4,4 +4,4 @@ Meu portfólio pessoal. Desenvolvido em Node.js, Express e EJS como template eng
 
 ## Meta
 
-Bruna Gabriele de Paula – [@bgpaula](https://www.linkedin.com/in/bruna-gabriele-de-paula/) – brunagabriele.paula@gmail.com
+Bruna Gabriele de Paula – [@bgpaula](https://www.linkedin.com/in/bruna-gabriele-de-paula/) – bru.gpaula@gmail.com
